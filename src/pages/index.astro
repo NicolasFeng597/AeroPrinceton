@@ -1,5 +1,11 @@
 ---
+import Navigation from "../components/Navigation.astro"
+import Footer from "../components/Footer.astro"
+import "../styles/global.css";
+import Hamburger from "../components/Hamburger.astro";
+
 const pageTitle = "Home" 
+const skills = ["a", "b"]
 ---
 
 <html lang="en">
@@ -9,9 +15,22 @@ const pageTitle = "Home"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} >
 		<title>Astro</title>
+
+		<style>
+			.skill {
+				color: green;
+			}
+		</style>
 	</head>
 	<body>
-		<a href="/about"> About </a>
+		<Hamburger />
+		<Navigation />
 		<h1>Astro</h1>
+		<img src="https://cdn.pixabay.com/photo/2017/08/18/06/51/capybara-2654006_1280.jpg">
+		<ul>
+			{skills.map((skill) => <li class="skill">{skill}</li>)}
+		</ul>
+
+		<Footer />
 	</body>
 </html>
