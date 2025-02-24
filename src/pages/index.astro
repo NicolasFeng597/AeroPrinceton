@@ -1,36 +1,29 @@
 ---
-import Navigation from "../components/Navigation.astro"
-import Footer from "../components/Footer.astro"
 import "../styles/global.css";
-import Hamburger from "../components/Hamburger.astro";
-
-const pageTitle = "Home" 
-const skills = ["a", "b"]
+import Layout from "../layouts/Layout.astro";
+const title = "Home page";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} >
-		<title>Astro</title>
-
-		<style>
-			.skill {
-				color: green;
-			}
-		</style>
-	</head>
-	<body>
-		<Hamburger />
-		<Navigation />
-		<h1>Astro</h1>
-		<img src="https://cdn.pixabay.com/photo/2017/08/18/06/51/capybara-2654006_1280.jpg">
-		<ul>
-			{skills.map((skill) => <li class="skill">{skill}</li>)}
-		</ul>
-
-		<Footer />
-	</body>
-</html>
+<Layout pageTitle={title}>
+	<!-- background video -->
+	<video playsinline autoplay muted loop id="background-video">
+		<source src="src/assets/zenith-video.mp4" type="video/mp4">
+	</video>
+	<div class="home-header">
+		<h1>
+			AeroPrinceton
+		</h1>
+	</div>
+	<div class="home-description">
+		<h2>
+			Skibidi.
+		</h2>
+		<h2>
+			Toilet.
+		</h2>
+		<h2>
+			Rizz.
+		</h2>
+	</div>
+	<img class="main-photo" src="src/assets/Zenith_Plane.jpg"> 
+</Layout>

@@ -1,8 +1,30 @@
 ---
-const platform = "github";
-const username = "withastro";
+import "../styles/footer.css";
 ---
 
-<footer>
-  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
-</footer>
+<div class="footer-container">
+  <ul class="footer-left">
+    <li>
+       <a href="/">Home</a>
+    </li>
+    <li>
+       <a href="/about-us/">About Us</a>
+    </li>
+    <li>
+       <a href="/events/">Events</a>
+    </li>
+    <li>
+      <a href="/donate/">Donate</a>
+   </li>
+    <li>
+      <p>© AeroPrinceton</p>
+    </li>
+    <!-- and so on with different pages -->
+ </ul>
+ <ul class="socials">
+    <li>
+      <!-- socials -->
+       <img src="src/assets/transparentlogo.svg" id="bottom-logo">
+    </li>
+ </ul>
+</div>
