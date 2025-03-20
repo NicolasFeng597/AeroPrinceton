@@ -1,8 +1,14 @@
 ---
 import "../styles/topnav.css";
 ---
+
 <nav class="nav-container">
-   <ul class="left-side">
+   <div class="logo">
+      <img src="/transparentlogo.svg">
+      <span class="aero">Aero</span>
+      <span class="princeton">Princeton</span>
+   </div>
+   <ul class="pages">
       <li>
          <a href="/">Home</a>
       </li>
@@ -13,13 +19,20 @@ import "../styles/topnav.css";
          <a href="/events/">Events</a>
       </li>
       <li>
-         <a href="/donate/">Donate</a>
+         <a href="/members/">Members</a>
       </li>
       <!-- and so on with different pages -->
    </ul>
-   <ul class="right-side">
+   <ul class="pages">
       <li>
-      <img src="/blacklogo.svg">
+         <div class="join">
+            <a href="/join">Join</a>
+         </div>
+      </li>
+      <li>
+         <div class="donate">
+            <a href="/donate">Donate</a>
+         </div>
       </li>
    </ul>
 </nav>

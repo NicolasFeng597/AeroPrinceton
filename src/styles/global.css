@@ -48,3 +48,8 @@ video {
   width: 100vw;
   height: 80vw;
 }
+
+@font-face {
+  font-family: Montserrat;
+  src: url(https://fonts.googleapis.com/css?family=Montserrat);
+}

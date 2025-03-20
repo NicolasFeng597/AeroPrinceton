@@ -6,39 +6,105 @@
 
 /* select the nav container and apply properties */
 .nav-container{
-   background-color: rgb(35, 31, 32);
+   /* background-color: rgb(35, 31, 32);
    border: 2px solid #000000;
    /* border-radius: 25px; */
    /* margin: 50px; */
-   overflow: hidden;
+   /* overflow: hidden; */
    /* apply flex to get right and left navigations in a row */
-   display: flex;
+   /* display: flex; */
    /* push both the blocks to the edges using justify-content */
-   justify-content: space-between;
+   /* justify-content: space-between; */
    
    /* for video */
-   position: relative;
+   /* position: relative; */
+
+   padding-left: 36px;
+   padding-right: 16px;
+   background: white;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   justify-content: space-between;
+   align-items: center;
+   display: flex;
 }
 
-/* target the ul and remove the bullets */
-.right-side, .left-side{
+.logo{
+   display: flex;
+   overflow: hidden;
+}
+
+.aero{
+   color: black;
+   font-size: 18px;
+   font-family: Limelight;
+   font-weight: 400;
+   word-wrap: break-word;
+   padding-top: 18px;
+   padding-left: 10px;
+}
+.princeton{
+   color: black;
+   font-size: 18px;
+   font-family: Rajdhani;
+   font-weight: 400;
+   letter-spacing: 0.90px;
+   word-wrap: break-word;
+   padding-top: 18px;
+}
+.pages{
    list-style-type: none;
 }
-/* change li display property from block to inline block */
-.right-side li, .left-side li{
+.pages li{
    display: inline-block;
+   padding: 20px;
 }
-/* style the anchor elements */
-.right-side li a, .left-side li a{
+.pages a{
    text-decoration: none;
-   display: block;
-   width: 100%;
-   height: 100%;
+   color: black;
    font-size: 20px;
-   color: #b5b5b5;
-   padding: 15px 16px;
-   font-weight: bold;
+   font-family: Montserrat;
+   font-weight: 400;
 }
+
+.join{
+   width: 76px;
+   padding-left: 16px;
+   padding-right: 16px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   background: black;
+   border-radius: 2px;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   display: flex;
+}
+
+.join a{
+   color: white;
+   font-size: 18px;
+   word-wrap: break-word;
+}
+
+.donate{
+   padding-left: 16px;
+   padding-right: 16px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   background: #E67725;
+   border-radius: 2px;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   display: flex;
+}
+
+.donate a{
+   color: white;
+   font-size: 18px;
+   word-wrap: break-word;
+}
+
 /* apply hover */
 .right-side li a:hover, .left-side li a:hover{
    background-color: #ddd;
