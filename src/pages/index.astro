@@ -1,23 +1,22 @@
 ---
 import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
+import Bullet from "../layouts/Bullet.astro";
 const title = "Home page";
 ---
 
 <Layout pageTitle={title}>
 	<!-- background video -->
-	<video playsinline autoplay muted loop id="background-video">
-		<source src="/zenith-video.mp4" type="video/mp4">
-	</video>
-	<div class="home-header">
+	<div>
 		<h1>
-			AeroPrinceton
+			personal flying, <br>for <b>everyone</b>.
 		</h1>
+		<video playsinline autoplay muted loop id="background-video">
+			<source src="/zenith-video.mp4" type="video/mp4">
+		</video>
 	</div>
-	<div class="home-description">
-		<h2>
-			If you can think it, you can build it.
-		</h2>
-	</div>
+	<Bullet>
+
+	</Bullet>
 	<img class="main-photo" src="/Zenith_Plane.jpg"> 
 </Layout>
