@@ -19,14 +19,32 @@ h1{
   font-weight: 400;
   letter-spacing: 3.20px;
   font-size: 50px;
-  position: absolute;
   text-align: left;
   padding-top: 15%;
   padding-left: 5%;
+  padding-bottom: 50px;
   color: white;
 }
 
+.aero-bullet{
+  color: #2A6790;
+  font-size: 80px;
+  font-family: Limelight;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.princeton-bullet{
+  color: #E67725;
+  font-size: 80px;
+  font-family: Rajdhani;
+  font-weight: 400;
+  letter-spacing: 4px;
+  word-wrap: break-word;
+}
+
 b{
+  font-weight: 400;
   color: #2A6790;
 }
 
@@ -37,15 +55,50 @@ video {
   z-index: -1;
 }
 
+.intro-text{
+  color: black;
+  font-size: 32px;
+  font-family: Montserrat;
+  font-weight: 400;
+  letter-spacing: 1.60px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.sub-text{
+  color: black;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 400;
+  letter-spacing: 1.60px;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .home-description {
   display: relative;
   width: 100vw;
   height: 100px;
 }
 
-.main-photo {
-  display: flex;
-  align-items: center;
-  width: 80%;
-  height: 80%;
+.title{
+  width: 441px;
+  color: black;
+  font-size: 64px;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 3.20px;
+  word-wrap: break-word;
+  padding-left: 50px;
+  padding-top: 100px;
+}
+
+.link{
+  text-decoration: underline;
+  width: 441px;
+  color: black;
+  font-family: Montserrat;
+  font-weight: 400;
+  text-decoration: underline;
 }

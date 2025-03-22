@@ -6,19 +6,6 @@
 
 /* select the nav container and apply properties */
 .nav-container{
-   /* background-color: rgb(35, 31, 32);
-   border: 2px solid #000000;
-   /* border-radius: 25px; */
-   /* margin: 50px; */
-   /* overflow: hidden; */
-   /* apply flex to get right and left navigations in a row */
-   /* display: flex; */
-   /* push both the blocks to the edges using justify-content */
-   /* justify-content: space-between; */
-   
-   /* for video */
-   /* position: relative; */
-
    padding-left: 36px;
    padding-right: 16px;
    background: white;
@@ -41,6 +28,7 @@
    word-wrap: break-word;
    padding-top: 18px;
    padding-left: 10px;
+   text-decoration: none;
 }
 .princeton{
    color: black;
@@ -50,9 +38,11 @@
    letter-spacing: 0.90px;
    word-wrap: break-word;
    padding-top: 18px;
+   text-decoration: none;
 }
 .pages{
    list-style-type: none;
+
 }
 .pages li{
    display: inline-block;
@@ -66,52 +56,57 @@
    font-weight: 400;
 }
 
-.join{
+.pages a:hover {
+   color: #2A6790;
+}
+
+.join-item a:hover, .donate-item a:hover{
+   color: #9bc5e2;
+}
+
+.join, .join:visited, .join:link{
    width: 76px;
    padding-left: 16px;
    padding-right: 16px;
    padding-top: 8px;
    padding-bottom: 8px;
-   background: black;
+   background-color: black;
    border-radius: 2px;
    justify-content: center;
    align-items: center;
    gap: 10px;
    display: flex;
-}
-
-.join a{
    color: white;
-   font-size: 18px;
-   word-wrap: break-word;
 }
 
-.donate{
+.donate, .donate:visited, .donate:link{
    padding-left: 16px;
    padding-right: 16px;
    padding-top: 8px;
    padding-bottom: 8px;
-   background: #E67725;
+   background-color: #E67725;
    border-radius: 2px;
    justify-content: center;
    align-items: center;
    gap: 10px;
    display: flex;
-}
-
-.donate a{
    color: white;
-   font-size: 18px;
    word-wrap: break-word;
 }
 
 /* apply hover */
 .right-side li a:hover, .left-side li a:hover{
-   background-color: #ddd;
+   /* background-color: #ddd; */
 }
 
 img {
    padding-top: 2px;
    padding-right: 4px;
    height: 55px;
+}
+
+.home-logo{
+   text-decoration: none;
+   padding: 0px;
+   align-items: center;
 }

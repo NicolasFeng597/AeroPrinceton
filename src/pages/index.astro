@@ -1,22 +1,42 @@
 ---
 import "../styles/global.css";
+import "../styles/bullet.css";
 import Layout from "../layouts/Layout.astro";
-import Bullet from "../layouts/Bullet.astro";
-const title = "Home page";
+const title = "Home";
 ---
 
 <Layout pageTitle={title}>
 	<!-- background video -->
 	<div>
-		<h1>
+		<h1 style="position: absolute;">
 			personal flying, <br>for <b>everyone</b>.
 		</h1>
 		<video playsinline autoplay muted loop id="background-video">
 			<source src="/zenith-video.mp4" type="video/mp4">
 		</video>
 	</div>
-	<Bullet>
+	<div class="bullet">
+		<p>
+			At
+			<br><b class="aero-bullet">Aero</b><b class="princeton-bullet">Princeton</b><b class="princeton-bullet" style="color: black">,</b>
+			<br>we believe that <b>everyone</b>
+			<br>should be able to fly.
+		</p>
 
-	</Bullet>
-	<img class="main-photo" src="/Zenith_Plane.jpg"> 
+		<div class="bullet-image">
+			<img src="/plane1.png">
+		</div>
+	</div>
+	<div class="bullet">
+		<div class="bullet-image">
+			<img src="/plane2.png">
+		</div>
+		<p>
+			<a class="sub-heading" href="/join">Join Us</a>
+			<br><br>in building a kit plane 
+			<br>and experience the thrill
+			<br>of flight.
+		</p>
+	</div>
+	<!-- <img class="main-photo" src="/Zenith_Plane.jpg">  -->
 </Layout>

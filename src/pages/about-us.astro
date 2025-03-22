@@ -1,11 +1,24 @@
 ---
 import "../styles/global.css";
+import "../styles/bullet.css";
 import Layout from "../layouts/Layout.astro";
-const title = "About Us page";
+const title = "About Us";
 ---
 
 <Layout pageTitle={title}>
-	<p> - The goal of the AeroPrinceton Aviation Club is to teach individuals technical aviation skills and apply them with strategy, design, teamwork, and problem solving to create functional, FAA approved airplanes. </p>
+	<h1 class="title">About Us</h1>
+	<div class="bullet-about-us">
+		<p class="intro-text" style="padding-bottom: 200px">
+			<b class="aero-bullet">Aero</b><b class="princeton-bullet">Princeton</b> is
+			<br></be>the only student-run club building full-scale, piloted aircraft in the world. The goal of the AeroPrinceton Aviation Club is to teach technical skills and apply them in a team setting to create a fully functional FAA approved Airplane.
+		</p>
+
+		<!-- <div class="bullet-image">
+			<img src="/plane3.jpg">
+		</div> -->
+	</div>
+
+	<!-- <p> - The goal of the AeroPrinceton Aviation Club is to teach individuals technical aviation skills and apply them with strategy, design, teamwork, and problem solving to create functional, FAA approved airplanes. </p>
 	<ul>
 		<li>
 			Members shall be granted access to certain club-specific documents and applicable information. 
@@ -80,6 +93,6 @@ Qualified Members may visit the hangar with the club,
 Qualified Members may work on the plane under supervision and explicit direction.
 Section 2.  Qualified Member Limitations:
 A Qualified Member may not work on the plane alone.
-A Qualified Member may have this status revoked if proven to be uncooperative, dangerous, or deemed unfit by a monitoring supervisor.
+A Qualified Member may have this status revoked if proven to be uncooperative, dangerous, or deemed unfit by a monitoring supervisor. -->
 
 </Layout>
