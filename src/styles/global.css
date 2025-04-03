@@ -3,12 +3,14 @@
   margin: 0px;
 }
 
-html, body {
-  margin:0;
-  padding:0;
-  overflow-x: hidden;
+html {
+   background-color: #f1f5f9;
+   font-family: "trasandina";
+   width: 100%;
+}
+
+body {
   width: 100%;
-  box-sizing: border-box;
 }
 
 h1{
@@ -60,7 +62,7 @@ video {
   font-weight: 400;
   letter-spacing: 1.60px;
   padding-left: 50px;
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 .sub-text{
   color: black;
@@ -70,7 +72,7 @@ video {
   letter-spacing: 1.60px;
   padding-top: 100px;
   padding-left: 50px;
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 
 .home-description {
@@ -80,7 +82,7 @@ video {
 }
 
 .title{
-  width: 441px;
+  width: 100vw;
   color: black;
   font-size: 64px;
   font-family: Montserrat;
@@ -92,9 +94,21 @@ video {
   padding-top: 100px;
 }
 
+h2 {
+  width: 100vw;
+  color: black;
+  font-size: 64px;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 3.20px;
+  word-wrap: break-word;
+  padding-left: 50px;
+  padding-top: 50px;
+}
 .link{
   text-decoration: underline;
-  width: 441px;
+  width: 100vw;
   color: black;
   font-family: Montserrat;
   font-weight: 400;
@@ -106,4 +120,12 @@ video {
   justify-content: center;
   display: flex;
   padding-bottom: 50px;
+}
+
+p {
+  color: black;
+  font-size: 32px;
+  font-family: Montserrat;
+  font-weight: 400;
+  letter-spacing: 1.60px;
 }

@@ -27,7 +27,6 @@
    font-family: Limelight;
    font-weight: 400;
    word-wrap: break-word;
-   padding-top: 18px;
    padding-left: 10px;
    text-decoration: none;
 }
@@ -38,7 +37,6 @@
    font-weight: 400;
    letter-spacing: 0.90px;
    word-wrap: break-word;
-   padding-top: 18px;
    text-decoration: none;
 }
 .pages {

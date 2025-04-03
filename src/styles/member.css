@@ -37,6 +37,8 @@
    padding-top: 10px;
    padding-left: 0px;
    margin: 0px;
+   padding-bottom: 0px;
+   padding-right: 0px;
 }
 
 .member p{
@@ -48,6 +50,5 @@
    letter-spacing: 0px;
    padding-left: 0px;
    padding-bottom: 50px;
-   padding-top: 40px;
-   width: 350px;
+   padding-top: 0px;
 }

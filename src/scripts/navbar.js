@@ -5,5 +5,4 @@ function open_hamburger() {
    } else {
      x.className = "pages";
    }
-   console.log("TEST");
  }
