@@ -5,20 +5,20 @@
 }
 
 /* select the nav container and apply properties */
-.nav-container{
+.nav-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
    padding-left: 36px;
    padding-right: 16px;
    background: white;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   justify-content: space-between;
-   align-items: center;
-   display: flex;
    min-height: 81px;
 }
 
-.logo{
+.logo {
    display: flex;
-   overflow: hidden;
+   align-items: center;
 }
 
 .aero{
@@ -41,15 +41,33 @@
    padding-top: 18px;
    text-decoration: none;
 }
-.pages{
+.pages {
    list-style-type: none;
-
+   display: flex;
+   justify-content: center; 
+   flex: 1; 
+   margin: 0;
+   padding: 0;
+   position: relative;
+   z-index: 1;
 }
-.pages li{
+
+.links {
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+   list-style-type: none; 
+   margin: 0; 
+   padding: 0;
+   width: 100%;
+}
+
+.pages li {
    display: inline-block;
    padding: 20px;
 }
-.pages a{
+
+.pages a {
    text-decoration: none;
    color: black;
    font-size: 20px;
@@ -59,10 +77,6 @@
 
 .pages a:hover {
    color: #2A6790;
-}
-
-.join-item a:hover, .donate-item a:hover{
-   color: #9bc5e2;
 }
 
 .join, .join:visited, .join:link{
@@ -107,50 +121,128 @@ img {
    align-items: center;
 }
 
+.mobile_only {
+   display: none;
+   padding: 0px;
+}
+
 .hamburger {
    display: none;
 }
 
-.mobile_only {
-   display: none;
-   padding: 0px;
+.join-donate-links {
+   margin-left: auto;
+   display: flex; 
+   gap: 10px;
+   align-items: center;
+}
+
+.join-donate-links a[href="/join/"] {
+   background-color: black;
+   color: white;
+   padding: 8px 16px;
+   border-radius: 4px;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold;
+   display: inline-block;
+   text-align: center;
+}
+
+.join-donate-links a[href="/donate/"] {
+   background-color: #E67725;
+   color: white;
+   padding: 8px 16px;
+   border-radius: 4px;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold;
+   display: inline-block;
+   text-align: center;
 }
 
 /* .mobile_only a {
    display: none;
 } */
 @media screen and (max-width: 993px) {
-   .logo {
-      /* position: fixed; */
-      /* top: 0;
-      left: 0;
-      padding-left: 36px;
-      padding-top: 11px; */
+.links{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+   width: 100%;
+   padding: 15px 0;
+}
+
+   .join-donate-links{
+      display: none;
    }
-   .pages li {display: none;}
+
+   .pages {
+      display: none; 
+      flex-direction: column;
+      position: absolute;
+      top: 81px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      z-index: 1000;
+   }
+
+   .pages.mobile {
+      display: flex; 
+      flex-direction: column;
+      padding: 15px 0;
+   }
+
+   .pages.mobile li {
+      display: block; 
+      text-align: center;
+      padding: 10px 0;
+   }
+
+   .pages.mobile a {
+      display: block; 
+      text-align: center;
+   }
+
+   .mobile_only {
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+   }
+
+   .mobile_only a {
+      display: block;
+      text-align: center;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 18px;
+      font-weight: bold;
+   }
+
+   .mobile_only a[href="/join/"] {
+      background-color: black;
+      color: white;
+   }
+
+   .mobile_only a[href="/donate/"] {
+      background-color: #E67725;
+      color: white;
+   }
+
    .hamburger {
       display: flex;
-      /* position: fixed;
-      top: 0;
-      right: 0;
-      padding-top: 28px;
-      padding-right: 36px; */
+      align-items: center;
+      cursor: pointer;
    }
-   .pages.mobile {
-      display: flex;
-      flex-direction: column;
-      background-color: red;
-      padding: 0px;
+
+   .hamburger a {
+      font-size: 24px;
+      color: black;
+      text-decoration: none;
    }
-   .pages.mobile li{
-      display: flex;
-      justify-content: center;
-      float: left;
-      
-   }
-   .pages.mobile a {
-      float: left;
-      display: flex;
-      text-align: left;
-   }
- }
+}
