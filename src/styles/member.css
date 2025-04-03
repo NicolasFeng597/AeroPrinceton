@@ -3,6 +3,7 @@
    justify-content: space-evenly;
    flex-wrap: wrap;
    margin-left: 50px;
+   margin-right: 50px;
 }
 .member{
    display: block;
@@ -20,6 +21,7 @@
 .member-image img{
    height: 100%;
    min-width: 100%;
+   object-fit: cover;
    left: 50%;
    position: relative;
    transform: translateX(-50%);
@@ -51,4 +53,5 @@
    padding-left: 0px;
    padding-bottom: 50px;
    padding-top: 0px;
+   max-width: 300px;
 }
