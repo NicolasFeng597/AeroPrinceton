@@ -102,3 +102,10 @@ video {
   font-weight: 400;
   text-decoration: underline;
 }
+
+.donate_box {
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 50px;
+}
