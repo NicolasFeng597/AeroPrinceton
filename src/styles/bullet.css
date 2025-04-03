@@ -92,8 +92,10 @@
 
 .main-para {
    max-width: 100%;
-   text-align: center;
-   padding: 20px;
+   padding: 20px 20px;
+   z-index: 1;
+   font-size: 48px;
+   position: absolute;
 }
 
 .body {
