@@ -40,7 +40,6 @@
    max-width: 504px;
    height: auto;
    overflow: visible;
-   border-radius: 1px;
    padding: 0;
    margin: 15px 0;
    display: flex;
@@ -94,7 +93,7 @@
    max-width: 100%;
    padding: 20px 20px;
    z-index: 1;
-   font-size: 48px;
+   font-size: 64px;
    position: absolute;
 }
 
