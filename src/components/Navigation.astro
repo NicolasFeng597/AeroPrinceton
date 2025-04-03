@@ -1,17 +1,31 @@
 ---
 import "../styles/topnav.css";
+// import "../../navbar.js";
 ---
+
+<!-- <script src="../scripts/navbar.js"></script> -->
+<script>
+   // function open_hamburger() {
+   window.open_hamburger = function() {
+      var x = document.getElementById("main_nav")!;
+      if (x.className === "pages") {
+         x.className += " mobile";
+      } else {
+         x.className = "pages";
+      }
+      console.log("TEST");
+   }
+</script>
 
 <nav class="nav-container">
    <div class="logo">
       <a href="/" class="home-logo">
          <img src="/transparentlogo.svg">
       </a>
-         <a class="aero" href="/">Aero</a>
-         <a class="princeton" href="/">Princeton</a>
-      </a>
+      <a class="aero" href="/">Aero</a>
+      <a class="princeton" href="/">Princeton</a>
    </div>
-   <ul class="pages">
+   <ul class="pages" id="main_nav">
       <li>
          <a href="/">Home</a>
       </li>
@@ -24,7 +38,10 @@ import "../styles/topnav.css";
       <li>
          <a href="/members/">Members</a>
       </li>
-      <!-- and so on with different pages -->
+      <div class="mobile_only">
+         <a href="/join/">Join</a>
+         <a href="/donate/">Donate</a>
+      </div>
    </ul>
    <ul class="pages">
       <li class="join-item">
@@ -33,5 +50,10 @@ import "../styles/topnav.css";
       <li class="donate-item">
          <a class="donate" href="/donate">Donate</a>
       </li>
+      <div class="hamburger">
+         <a href="javascript:void(0);" onclick="open_hamburger()">
+            <i class="fa fa-bars"></i>
+         </a>
+      </div>
    </ul>
 </nav>
