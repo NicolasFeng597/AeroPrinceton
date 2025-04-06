@@ -88,11 +88,11 @@ video {
 .title{
   width: 100vw;
   color: black;
-  font-size: 64px;
+  font-size: 40px;
   font-family: Montserrat;
   font-weight: 700;
   text-decoration: none;
-  letter-spacing: 3.20px;
+  letter-spacing: 3px;
   word-wrap: break-word;
   padding-left: 50px;
   padding-top: 100px;
