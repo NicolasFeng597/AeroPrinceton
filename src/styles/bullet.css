@@ -23,7 +23,8 @@
 }
 
 .aero-bullet{
-   color: #2A6790;
+   /* color: #2A6790; */
+   color:black;
    font-size: 46px;
    font-family: Limelight;
    font-weight: 400;
@@ -91,6 +92,7 @@
    font-family: Montserrat;
    font-weight: 400;
    letter-spacing: 1.60px;
+   /* padding: 1000px; */
 }
 
 .main-para {
