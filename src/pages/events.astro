@@ -1,35 +1,175 @@
 ---
 import "../styles/global.css";
+import "../styles/event.css";
 import Layout from "../layouts/Layout.astro";
 const title = "Events";
 ---
+<!-- Include links, bold, italic ++ -->
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+
+</script>
 
 <Layout pageTitle={title}>
 	<h1 class="title">Current Events</h1>
-	<p class="intro-text" style="padding-right: 30px; padding-bottom: 50px;">
+	<p class="intro-text">
 		This Sunday (4/6) at 3 PM we will host our first meeting in Jadwin A07. We would love to see you there!
 	</p>
-	<h2>Flight Plan (Future Events)</h2>
-	<p class="intro-text" style="padding-right: 30px; padding-top: 50px;">
-		In the <b>spring of 2025</b>, our plan is to gain experience, set up the organization, fundraise, and purchase the plane. So far we have gone all across the country and learned relevant skills in plane building and company organization, received State and Federal acknowledgement as a Non-Profit Organization, and begun fundraising.
-		<br><br>
-		In <b>May</b>, William Rogers and Zachary Wagner will be visiting the Zenith Factory and will build the entire rudder of the plane.
-		<br><br>
-		At the <b>beginning of the 2025 Fall semester</b> we plan to begin building the Zenith CH 750. Later, in the <b>Spring semester of 2026</b>, we plan to complete construction of the plane and have the chance to fly all of our members in the plane that we build. Then, to recoup our investment, we will auction the finished airplane at the Princeton Reunions.
-		<br><br>
-		The <b>following years</b>, we will continue this rhythm of purchasing the airplane, building, flying, and auctioning. If we continue to do fundraising, we expect that in the coming years we will be able to build more planes, and ones of greater complexity. After completing our first airplane, we want to share our experiences with other like minded individuals and <u>eventually spread to other colleges to foster more airplane building clubs</u>.
-		<br><br>
-		Ultimately, in four years we would like to do as follows: Using the experience and wisdom that we have gained from building airplanes in conjunction with the education received from engineering courses, we will create a plane of our own entirely unique design. Finally, we start and race in the first ever transcontinental collegiate air race with experimental aircraft.
-	</p>
-	<h2>Navlog (Past Events)</h2>
-	<p class="intro-text" style="padding-right: 30px; padding-top: 50px; padding-bottom: 50px;">
-		In the short amount of time that we have had this club we have done a lot! We have gone all over the country and gotten to speak to incredibly interesting people, and what's more, our hard work is beginning to bear fruit. This all started in <b>January of 2025</b>, when William Rogers and Nickolas Akey became serious about finding a way to fulfill our dreams of building and flying our own very own aircraft. 
-		<br><br>
-		<b>January</b> -- Shortly thereafter we went to Virginia to attend a plane building class in Virginia hosted by EAA, the Experimental Aviation Association. The EAA is committed to helping aviation enthusiasts build experimental aircraft and separately host the world's largest 'fly-in' with over ten thousand planes and half a million people in one weekend. At the EAA course, we learned how to rivet and how to build an avionics panel. From this experience we not only developed our skills, but also connected with highly experienced and accredited pilots and mechanics. This was also when we decided to build the Zenith CH 750,  a plane known for its reliability and relative ease of construction,  from a brand with excellent customer service and readily available building workshops. 
-		<br><br>
-		<b>February</b> -- In February, we visited an organization working with highschool students to build the popular kit experimental plane, the Vans RV-12. Here, we learned the importance of planning the project out from the beginning and team management. Later in the month we also became both state and federally approved as a 501(c)(3) Non-Profit.
-		<br><br>
-		<b>March</b> -- Over Spring Break, William Rogers went to speak with a highschool class building a Vans RV-12. From that group, we learned the importance of creating strong relationships with local mechanics and FAA offices. At the end of the Month, we completed this website, and began reaching out to donors.
-	</p>
+	<h2>Flight Plan<br><span style="font-size: medium;">Our Plan Going Forward</span></h2>
+	<br><br>
+
+
+	<div class="timeline">
+
+		<h3>2025</h3>
+
+		<div class="container right">
+			<button class="collapsible">Set ourselves up for success</button>
+			  <div class="collcontent">
+				<div class="specialT">Since founding this Nonprofit, our immediate goals have been to set up the organization, 
+					fundraise, and purchase the plane. So far we have gone all across the country and learned relevant skills 
+					in plane building and company organization, received State and Federal acknowledgement as a Non-Profit 
+					Organization, and we have begun fundraising.</div>
+			  </div>
+		  </div>
+
+		<h3>2025-26 School Year</h3>
+
+		<div class="container right">
+			<button class="collapsible">Build Then Fly the Zenith CH 750</button>
+				<div class="collcontent">
+				<div class="specialT">At the beginning of the 2025 Fall semester we plan to begin building the Zenith CH 750.
+					 Later, in the Spring semester of 2026, we plan to complete construction of the plane and have the chance 
+					 to fly all of our members in the plane that we build. Then, to recoup our investment, we will auction 
+					 the finished airplane at the Princeton Reunions. </div>
+			</div>
+		</div>
+
+		<h3>2026-2027</h3>
+
+		<div class="container right">
+			<button class="collapsible">We want to share our passion with the world</button>
+			  <div class="collcontent">
+				<div class="specialT">In the following years, we will continue this rhythm of purchasing the airplane,
+					 building, flying, and auctioning. If we continue to do fundraising, we expect that in the coming years 
+					 we will be able to build more planes, and ones of greater complexity. After completing our first airplane, 
+					 we want to share our experiences with other like minded individuals and eventually expand our business
+					  model to other colleges to foster more airplane building clubs.</div>
+			  </div>
+		</div>
+
+		<h3>2027-28 School Year</h3>
+
+		<div class="container right">
+			<button class="collapsible">Graduate with a legacy of setting records</button>
+			  <div class="collcontent">
+				<div class="specialT">Ultimately, in four years (2027-28 school year) we would like to do as follows: 
+					Using the experience and wisdom that we have gained from building airplanes in conjunction with the 
+					education received from engineering courses, we will create a plane of our own entirely unique design. 
+					Subsequently, we want to start and race in the first ever transcontinental collegiate air race with 
+					experimental aircraft. As far as we know, this will mean that AeroPrinceton will have made two firsts 
+					- being the first ever college student run organization to build aircraft, and the first to ever race them.</div>
+			  </div>
+		</div>
+
+	</div>
+
+	<h2>Navlog<br><span style="font-size: medium;">What we have done so far</span></h2>
+	
+	<p>In the short amount of time that we have had this club we have done a lot! This all started in January of 2025, 
+		when William Rogers and Nickolas Akey became serious about finding a way to fulfill their dreams of flying an 
+		aircraft built from scratch.
+	</br>Since then, our members have travelled  all over the country in order to speak with and learn from  incredibly 
+	interesting people in aviation. What's more, our hard work is beginning to bear fruit: </p>
+
+	<div class="timeline">
+
+		<h3>February</h3>
+
+		<div class="container right">
+			<button class="collapsible">Feb. 8th - Attended EAA Class for Riveting and Avionic</button>
+			  <div class="collcontent">
+				<div class="specialT">Shortly after starting the organization we went to Virginia to attend a plane building class in Virginia hosted by
+					EAA, the Experimental Aviation Association. The EAA is committed to helping aviation enthusiasts build experimental
+					 aircraft and separately hosts the world’s largest ‘fly-in’ with over ten thousand planes and half a million people 
+					 in one weekend. At the EAA course, we learned how to rivet and how to build an avionics panel. From this experience 
+					 we not only developed our skills, but also connected with highly experienced and accredited pilots and mechanics. 
+					 This was also when we decided to build the Zenith CH 750,  a plane known for its reliability and relative ease of 
+					 construction,  from a brand with excellent customer service and readily available building workshops.</div>
+			  </div>
+		  </div>
+
+		<div class="container right">
+			<button class="collapsible">Feb 22nd - Visited Teen Aviation NJ</button>
+				<div class="collcontent">
+				<div class="specialT">In February, we visited an organization working with highschool students to build the 
+					popular kit experimental plane, the Vans RV-12. Here, we learned the importance of planning the project 
+					out from the beginning and as well as the importance of team management. Later in the month we also became 
+					both state and federally approved as a 501(c)(3) Non-Profit.</div>
+			</div>
+		</div>
+
+		<h3>March</h3>
+
+		<div class="container right">
+			<button class="collapsible">Mar. 13 - Visited Ignite Bentonville</button>
+			  <div class="collcontent">
+				<div class="specialT">Over Spring Break, William Rogers went to speak with a highschool class building a 
+					Vans RV-12. From that group, we learned the importance of creating strong relationships with local mechanics 
+					and FAA offices. At the end of the Month, we completed this website, and began reaching out to donors.</div>
+			  </div>
+		</div>
+
+		<h3>April</h3>
+
+		<div class="container right">
+			<button class="collapsible">April 4 - Posted Complete Website</button>
+			  <div class="collcontent">
+				<div class="specialT">In April we finished our initial website, allowing us to spread our message and 
+					contact like-minded individuals.</div>
+			  </div>
+		</div>
+
+		<div class="container right">
+			<button class="uncollapsible">Our First Team Meeting!</button>
+		</div>
+
+		
+
+
+	
+
+
+		<!-- Orignal Functions: -->
+		<!-- <div class="container left">
+			<div class="content">
+				<h2>2017</h2>
+				<p>Lorem ipsum..</p>
+			</div>
+			</div> -->
+
+		<!-- <button type="button" class="collapsible"></button>
+		<div class="collcontent">
+			<p>yadayada</p>
+		</div> -->
+	</div>
+	
+	
+
 	<!-- During construction, we will be taking Enterprise CarShare to the Princeton Airport every week. -->
 </Layout>

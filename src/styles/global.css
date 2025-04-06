@@ -2,9 +2,16 @@
   padding: 0px;
   margin: 0px;
 }
+:root {
+  --bgcolor:#f1f5f9;
+  --orange: #E67725;
+  --accent: black;
+  /* --accent: #2A6790; WE ARE NOT USING THIS */
+  --tfont: "Montserrat"
+}
 
 html {
-   background-color: #f1f5f9;
+   background-color: var(--bgcolor);
    font-family: "trasandina";
    width: 100%;
    overflow-x: hidden;
@@ -19,7 +26,7 @@ body {
 
 h1{
   font-size: 64px;
-  font-family: Montserrat;
+  font-family: var(--tfont);
   font-weight: 400;
   letter-spacing: 3.20px;
   font-size: 50px;
@@ -27,11 +34,11 @@ h1{
   padding-top: 15%;
   padding-left: 5%;
   padding-bottom: 50px;
-  color: rgb(239, 238, 238);
+  color: white;
 }
 
 .aero-bullet{
-  color: #2A6790;
+  color: #000000;
   font-size: 46px;
   font-family: Limelight;
   font-weight: 400;
@@ -39,7 +46,7 @@ h1{
 }
 
 .princeton-bullet{
-  color: #E67725;
+  color: var(--orange);
   font-size: 46px;
   font-family: Rajdhani;
   font-weight: 400;
@@ -49,7 +56,7 @@ h1{
 
 b{
   font-weight: 400;
-  color: #2A6790;
+  color: var(--accent);
 }
 
 video {
@@ -61,8 +68,8 @@ video {
 
 .intro-text{
   color: black;
-  font-size: 32px;
-  font-family: Montserrat;
+  font-size: 20px;
+  font-family: var(--tfont);
   font-weight: 400;
   letter-spacing: 1.60px;
   padding-left: 50px;
@@ -71,7 +78,7 @@ video {
 .sub-text{
   color: black;
   font-size: 20px;
-  font-family: Montserrat;
+  font-family: var(--tfont);
   font-weight: 400;
   letter-spacing: 1.60px;
   padding-top: 100px;
@@ -89,7 +96,7 @@ video {
   width: 100vw;
   color: black;
   font-size: 40px;
-  font-family: Montserrat;
+  font-family: var(--tfont);
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 3px;
@@ -101,8 +108,8 @@ video {
 h2 {
   width: 100vw;
   color: black;
-  font-size: 64px;
-  font-family: Montserrat;
+  font-size: 40px;
+  font-family: var(--tfont);
   font-weight: 700;
   text-decoration: none;
   letter-spacing: 3.20px;
@@ -128,8 +135,9 @@ h2 {
 
 p {
   color: black;
-  font-size: 32px;
-  font-family: Montserrat;
-  font-weight: 400;
+  font-size: 15px;
+  font-family: var(--tfont);
+  font-weight: 400px;
   letter-spacing: 1.60px;
+  padding: 10px 40px;
 }
