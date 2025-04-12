@@ -76,7 +76,7 @@
 }
 
 .pages a:hover {
-   color: #2A6790;
+   color: var(--orange);
 }
 
 .join, .join:visited, .join:link{

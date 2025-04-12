@@ -19,12 +19,12 @@
  h2 {
     /* padding-left: 10%; */
     font-size: 30px;
-    width: auto;
+    width:fit-content;
     padding: 10px;
 
  }
 
- p {
+ p li {
     /* padding: 30px; */
     padding-left: 12%;
     /* padding-right: 12%; */
@@ -45,7 +45,48 @@
     /* padding-right: 50px; */
 }
 
-@media (max-width: 600px) {
-  
+/* Box At The Bottom */
 
+.values-goals-wrapper {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   /* border: 1px solid black; */
+   width: 100%;
+}
+
+.values, .goals {
+   flex: 1;
+   min-width: 300px;
+   padding: 20px;
+   box-sizing: border-box;
+   /* border-right: 1px solid black; */
+}
+
+.goals {
+   border-right: none; /* remove right border on last item */
+}
+
+.values h2, .goals h2 {
+   font-weight: bold;
+   font-size: 1.5em;
+}
+
+ul {
+   padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+   .values-goals-wrapper {
+   flex-direction: column;
+   }
+
+   .values, .goals {
+   border-right: none;
+   /* border-bottom: 1px solid black; */
+   }
+
+   .goals {
+   border-bottom: none;
+   }
 }
