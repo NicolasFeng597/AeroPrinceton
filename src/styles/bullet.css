@@ -38,34 +38,70 @@
    letter-spacing: 4px;
    word-wrap: break-word;
 }
-
+/* 
 .bullet-image{
    width: 100%;
    max-width: 504px;
+   min-width: 300px;
    height: auto;
-   overflow: visible;
+   overflow:hidden;
    padding: 0;
    margin: 15px 0;
    display: flex;
    justify-content: center;
    align-items: center;
    flex: 1;
-}
+} */
 
-.bullet-image img{
+/* .bullet-image img{
    height: auto;
-   width: 100%;
-   left: 50%;
+   width: 300px;
+   left: 0;
    position: relative;
    object-fit: contain;
-   transform: translateX(-49.6%);
+   transform: translateX(-30px);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 12px;
+} */
+
+.bullet-image {
+   margin-top: 20px;
+               
+   max-width: 480px;
+   max-height: 300px;
+   overflow: hidden;          /* Crop the overflow */
+   border-radius: 12px;       /* Apply rounded corners */
+   display: inline-block;
+   /* position: relative; */
+   box-shadow: 0 0 5px rgb(0,0,0);
+
+   width: 50vw;
+   height: 30vw;
+   scale: 1;
+
+   border-radius: 12px;
+   object-position: center;
+   align-items: center;
+   justify-content: center;
+}
+
+.bullet-image img {
+   object-position: center;
+   align-items: center;
+   justify-content: center;
+
+   height: 105%;
+   min-width: 105%;
+   object-fit:fill;
+   left: 50%;
+   position:relative;
+   transform: translate3d(-50%, -1%, 0);
    border-radius: 12px;
 }
 
 .sub-heading{
    width: 441px;
-   color: #E67725;
+   color: var(--orange);
    font-size: 64px;
    font-family: Montserrat;
    font-weight: 700;
@@ -75,7 +111,7 @@
 }
 
 .bullet a:hover{
-   color: #2A6790;
+   color: var(--accent);
 }
 
 .bullet-about-us{
@@ -84,16 +120,27 @@
    align-items: center;
    justify-content: center;
    padding-bottom: 50px;
+
+   display: flex;
+   flex-direction: row;     /* image and text side-by-side */
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   padding-bottom: 50px;
+   flex-wrap: wrap;
 }
 
 .bullet-about-us p{
    color: black;
-   font-size: 32px;
+   font-size: 20px;
    font-family: Montserrat;
    font-weight: 400;
-   letter-spacing: 1.60px;
+   letter-spacing: .60px;
    /* padding: 1000px; */
+   
 }
+
+
 
 .main-para {
    max-width: 100%;
@@ -106,9 +153,9 @@
 .body {
    overflow: hidden;
 }
-.bullet, .bullet-image, .pages, .links {
+/* .bullet, .bullet-image, .pages, .links {
    max-width: 100vw;
-}
+} */
 
 .text-para {
    padding: 50px;
@@ -125,9 +172,9 @@
      margin-top: 20px;
    }
  
-   .bullet-image {
+   /* .bullet-image {
      margin-bottom: 15px;
-   }
+   } */
  
    .bullet p {
      margin: 0;

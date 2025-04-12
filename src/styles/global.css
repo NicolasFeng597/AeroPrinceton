@@ -1,21 +1,46 @@
+/* Notes 
+  - Please Comment Code
+  - The information below is ordered by relevance
+    and use frequency
+  
+*/
+
+/*************/
+/*    ALL    */
+/*************/
 * {
   padding: 0px;
   margin: 0px;
+  
 }
+
+/*************/
+/* VARIABLES */
+/*************/
+
 :root {
   --bgcolor:#f1f5f9;
   --orange: #E67725;
   --accent: black;
   /* --accent: #2A6790; WE ARE NOT USING THIS */
-  --tfont: "Montserrat"
+  --tfont: "Montserrat";
+  --maxWidth: 700px;
 }
 
+/***********/
+/* GENERAL */
+/***********/
+
 html {
-   background-color: var(--bgcolor);
-   font-family: "trasandina";
-   width: 100%;
-   overflow-x: hidden;
+  background-color: var(--bgcolor);
+  font-family: "trasandina";
+  width: 100%;
+  overflow-x: hidden;
+  
 }
+/* p h1, h2, .sub-text {
+  max-width: 1000px;
+} */
 
 body {
   width: 100%;
@@ -24,7 +49,7 @@ body {
   padding: 0;
 }
 
-h1{
+h1 {
   font-size: 64px;
   font-family: var(--tfont);
   font-weight: 400;
@@ -35,74 +60,6 @@ h1{
   padding-left: 5%;
   padding-bottom: 50px;
   color: white;
-}
-
-.aero-bullet{
-  color: #000000;
-  font-size: 46px;
-  font-family: Limelight;
-  font-weight: 400;
-  word-wrap: break-word;
-}
-
-.princeton-bullet{
-  color: var(--orange);
-  font-size: 46px;
-  font-family: Rajdhani;
-  font-weight: 400;
-  letter-spacing: 4px;
-  word-wrap: break-word;
-}
-
-b{
-  font-weight: 400;
-  color: var(--accent);
-}
-
-video {
-  display: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.intro-text{
-  color: black;
-  font-size: 20px;
-  font-family: var(--tfont);
-  font-weight: 400;
-  letter-spacing: 1.60px;
-  padding-left: 50px;
-  /* padding-right: 50px; */
-}
-.sub-text{
-  color: black;
-  font-size: 20px;
-  font-family: var(--tfont);
-  font-weight: 400;
-  letter-spacing: 1.60px;
-  padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.home-description {
-  display: relative;
-  width: 100vw;
-  height: 100px;
-}
-
-.title{
-  width: 100vw;
-  color: black;
-  font-size: 64px;
-  font-family: var(--tfont);
-  font-weight: 700;
-  text-decoration: none;
-  letter-spacing: 3.20px;
-  word-wrap: break-word;
-  padding-left: 50px;
-  padding-top: 100px;
 }
 
 h2 {
@@ -117,6 +74,90 @@ h2 {
   padding-left: 50px;
   padding-top: 50px;
 }
+
+p {
+  color: black;
+  font-size: 15px;
+  font-family: var(--tfont);
+  font-weight: 400px;
+  letter-spacing: 1.60px;
+  padding: 10px 40px;
+}
+
+b {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+em {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration:underline;
+}
+
+hr {
+  size: 5px;
+  color: black;
+  margin-top: 40px; 
+  margin-left: 50px; 
+  margin-right: 50px;
+}
+
+table, th, td {
+  /* border:1px solid black; */
+  padding: 2vw;
+  width:50%;
+  align-content: flex-start;
+  
+}
+
+th {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+
+/**********/
+/* ADD-IN */
+/**********/
+
+video {
+  display: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  
+}
+
+.bigVid {
+  display: flex; 
+  align-items: center;
+  border-color: black;
+  border-bottom-width: 5px;
+  /* border-width: 1px; */
+  border-style: solid;
+  /* border: 4px solid black; */
+  /* border-radius: 12px; */
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.2); */
+}
+
+/* FOR IMAGES FROM GOOGLE DRIVE*/
+.image {
+  /* INSERT DRIVE URL where it says <your_id> */
+    /*  everyting after this: https://drive.google.com/file/d/......... */
+  background-image: "http://drive.google.com/uc?export=view&id=<your_id>";
+}
+
 .link{
   text-decoration: underline;
   width: 100vw;
@@ -126,18 +167,80 @@ h2 {
   text-decoration: underline;
 }
 
-.donate_box {
-  width: 100vw;
-  justify-content: center;
-  display: flex;
-  padding-bottom: 50px;
+/****************/
+/* SPECIAL TEXT */
+/****************/
+
+.intro-text{
+  color: black;
+  font-size: 20px;
+  font-family: var(--tfont);
+  font-weight: 400;
+  letter-spacing: 1.60px;
+  padding-left: 50px;
+  /* padding-right: 50px; */
+  font-weight: 500;
 }
 
-p {
+.sub-text{
   color: black;
-  font-size: 15px;
+  font-size: 18px;
   font-family: var(--tfont);
-  font-weight: 400px;
-  letter-spacing: 1.60px;
-  padding: 10px 40px;
+  font-weight: 400;
+  letter-spacing: .01px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: 400;
+
+}
+
+.text-block {
+  width: 900px;             /* Fixed width of the text block */
+  max-width: 100%;          /* Allow the text block to resize up to 100% of its container */
+  margin: 0 auto;           /* Centers the block horizontally */
+  text-align: justify;      /* Justifies the text */
+  padding: 0px;            /* Adds margin inside the block */
+  box-sizing: border-box;   /* Ensures padding doesn't overflow the block */
+}
+
+.home-description {
+  display: relative;
+  width: 100vw;
+  height: 100px;
+}
+
+.title{
+  width: 100vw;
+  max-width: 1000px;
+  color: black;
+  font-size: 64px;
+  font-family: var(--tfont);
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 3.20px;
+  word-wrap: break-word;
+  padding-left: 40px;
+  padding-top: 100px;
+}
+
+/**********/
+/* BULLET */
+/**********/
+
+.aero-bullet{
+  color: black;
+  font-size: 46px;
+  font-family: Limelight;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.princeton-bullet{
+  color: var(--orange);
+  font-size: 46px;
+  font-family: Rajdhani;
+  font-weight: 400;
+  letter-spacing: 4px;
+  word-wrap: break-word;
 }

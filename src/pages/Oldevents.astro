@@ -5,50 +5,40 @@ import Layout from "../layouts/Layout.astro";
 const title = "Events";
 ---
 <!-- Include links, bold, italic ++ -->
- <!-- This page should repalece events -->
 
 <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-	// this is the code for the box
-	var coll = document.getElementsByClassName("collapsible");
-	var i;
-
-	for (i = 0; i < coll.length; i++) {
-	coll[i].addEventListener("click", function() {
-		this.classList.toggle("active");
-		var content = this.nextElementSibling;
-		if (content.style.maxHeight){
-		content.style.maxHeight = null;
-		} else {
-		content.style.maxHeight = content.scrollHeight + "px";
-		} 
-	});
-	}
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
 
 
 </script>
 
 <Layout pageTitle={title}>
-  <h1 class="title" style="padding-left: 5%;">Events</h1>
-  <div align="center">
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=Y180MTViNjdkOGRhMzc2NWNmYzMyMzAwYzdmZjJiMzY2YjhhODA3Njg4ZmYzYTA3N2Y4NzUwOTc0YzY3ZWM3OWFmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%233F51B5"></iframe>
-  </div>
-	<!-- <p class="intro-text" style="padding-left: 15%; padding-top: 0%;">
-		This Sunday (4/6) at 3 PM we will host our first meeting in Jadwin A07. We would love to see you there!
-  </p> -->
 
-    
-	<h2>Flight Plan</h2>
-  
-  <h3 style="font-size: medium;">Our Plan Going Forward</h3>
-	<br><br>
-  
+	<div class="bgImage">
+		<h1 class="title" style="padding-left: 5%;">Current Events</h1>
+		<p class="intro-text" style="padding-left: 10%;">
+			This Sunday (4/6) at 3 PM we will host our first meeting in Jadwin A07. We would love to see you there!
+		</p>
+		<h2>Flight Plan<br><span style="font-size: medium;">Our Plan Going Forward</span></h2>
+		<br><br>
+	</div>
 
 
 	<div class="timeline">
-
-			<div class="bgImage">
-
+			<div class="bgImage1">
 				<h3>2025</h3>
 				<div class="container right">
 					<button class="collapsible">Set ourselves up for success</button>
@@ -63,9 +53,7 @@ const title = "Events";
 				<div class="container right">
 					<button class="collapsible">Build Then Fly the Zenith CH 750</button>
 						<div class="collcontent">
-						<div class="specialT">At the beginning of the 2025 Fall semester we plan to begin building the 
-							<a href="https://zenithair.net/introduction-zenith-ch750-cruzer/" >Zenith CH 750.</a>
-
+						<div class="specialT">At the beginning of the 2025 Fall semester we plan to begin building the Zenith CH 750.
 							Later, in the Spring semester of 2026, we plan to complete construction of the plane and have the chance
 							to fly all of our members in the plane that we build. Then, to recoup our investment, we will auction
 							the finished airplane at the Princeton Reunions. </div>
@@ -94,25 +82,24 @@ const title = "Events";
 							- being the first ever college student run organization to build aircraft, and the first to ever race them.</div>
 					</div>
 				</div>
-
 			</div>
 
 	</div>
 
 
-	<!-- <div class="bgImage"> -->
+	<div class="bgImage">
 		<h2>Navlog<br><span style="font-size: medium;">What we have done so far</span></h2>
 	
 		<p>In the short amount of time that we have had this club we have done a lot! This all started in January of 2025, 
 			when William Rogers and Nickolas Akey became serious about finding a way to fulfill their dreams of flying an 
-			aircraft built from scratch. Since then, our members have travelled  all over the country in order to speak with and learn from  incredibly 
-		interesting people in aviation. </p>
-	<!-- </div> -->
+			aircraft built from scratch.
+		</br>Since then, our members have travelled  all over the country in order to speak with and learn from  incredibly 
+		interesting people in aviation. What's more, our hard work is beginning to bear fruit: </p>
+	</div>
 
 	
 	<div class="timeline">
-		<div class="bgImage">
-
+		<div class="bgImage1">
 			<h3>February</h3>
 
 			<div class="container right">
@@ -120,14 +107,11 @@ const title = "Events";
 				<div class="collcontent">
 					<div class="specialT">Shortly after starting the organization we went to Virginia to attend a plane building class in Virginia hosted by
 						EAA, the Experimental Aviation Association. The EAA is committed to helping aviation enthusiasts build experimental
-						aircraft and separately hosts the world’s largest 
-						<a href="https://www.eaa.org/airventure">‘fly-in’</a> 
-						with over ten thousand planes and half a million people 
-						in one weekend. At the 
-						<a href="https://www.eaa.org/eaa/aircraft-building/eaa-sportair-workshops">EAA course</a>
-						, we learned how to rivet and how to build an avionics panel. From this experience 
+						aircraft and separately hosts the world’s largest ‘fly-in’ with over ten thousand planes and half a million people 
+						in one weekend. At the EAA course, we learned how to rivet and how to build an avionics panel. From this experience 
 						we not only developed our skills, but also connected with highly experienced and accredited pilots and mechanics. 
-					</div>
+						This was also when we decided to build the Zenith CH 750,  a plane known for its reliability and relative ease of 
+						construction,  from a brand with excellent customer service and readily available building workshops.</div>
 				</div>
 			</div>
 
@@ -135,9 +119,7 @@ const title = "Events";
 				<button class="collapsible">Feb 22nd - Visited Teen Aviation NJ</button>
 					<div class="collcontent">
 					<div class="specialT">In February, we visited an organization working with highschool students to build the 
-						popular kit experimental plane, the 
-						<a href="https://www.vansaircraft.com/rv-12is/">Vans RV-12</a>
-						. Here, we learned the importance of planning the project 
+						popular kit experimental plane, the Vans RV-12. Here, we learned the importance of planning the project 
 						out from the beginning and as well as the importance of team management. Later in the month we also became 
 						both state and federally approved as a 501(c)(3) Non-Profit.</div>
 				</div>
@@ -180,10 +162,11 @@ const title = "Events";
 			<div class="collcontent">
 				<p>yadayada</p>
 			</div> -->
-
 		</div>
 	
 	</div>
+	
+	
 	
 
 	<!-- During construction, we will be taking Enterprise CarShare to the Princeton Airport every week. -->

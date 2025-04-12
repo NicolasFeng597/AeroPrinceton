@@ -1,0 +1,173 @@
+:root {
+  --line-color: rgba(199, 73, 0, 0.291);
+}
+
+.bgImage {
+    /* https://www.textures.com/browse/crumpled/101501 */
+    /* https://drive.google.com/file/d/1RQxzZO-mvToJbwWVX_GY4J4LXJUzv_wf/view?usp=sharing */
+    /* http://drive.google.com/uc?export=view&id= */
+    /* JOIN THE TWO LINKS AFTER .../file/d/  , and before ...?usp=sharing*/
+    
+    /* background-image: url(https://drive.google.com/thumbnail?id=1RQxzZO-mvToJbwWVX_GY4J4LXJUzv_wf); */
+    /* background-image: url("https: //drive .google .com/file/d/ 1RQxzZO mvToJbwWVX_GY 4J 4LXJUzv_wf /view;");  */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+    /* background-blend-mode: difference; */
+    background-position: center;
+    
+    content: "";
+    position: absolute;
+    width: 160%;
+    height: 65%;
+    top: +39%;
+    left: -30%;
+    z-index: -1;
+    background-color: #ddd; /* Fallback background color */
+    /* background-size: cover; Cover entire pseudo-element area */
+    /* transform: rotate(90deg); css rotate background image, css background rotate */
+    
+  }
+
+iframe {
+  border: solid;
+  border-width: 10px;
+  border-radius: 12px;
+  border-style:ridge;
+  border-color: #474e5d;
+  background-color: white;
+  /* width:100%; */
+  width: 400px;
+  margin-bottom: 100px;
+  
+
+  /* scale: 1.3 1; */
+  /* width:300%; */
+}
+
+p {
+  letter-spacing: 0.px;
+}
+
+.title {
+  color: white;
+}
+
+
+.donor-page {
+  /*  Deep Princeton orange to light orange  */
+  /* background: linear-gradient(135deg, , );*/
+  /* background-image: linear-gradient(to bottom right,#E67725, var(--orange), #FFB347); */
+  min-height: 100vh;
+  /* padding: 60px 20px; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.donate_box {
+  /* width: 100%; */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.donateLink:link, .donateLink:visited {
+  background-color: black;
+  color: white;
+  padding: 2px 5px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  border-radius: 15px;
+}
+
+.donateLink:hover, .donateLink:active {
+  background-color:#3e3e3e;
+  transition: background-color 0.3s ease;
+}
+
+
+@media screen and (max-width: 1000px) {
+  /* p {
+    padding-left: 0;
+    padding-right: 0;
+    transition-property: all;
+  } */
+  iframe {
+    scale: 1;
+  }
+}
+
+/* Background */
+
+
+
+.donor-page {
+	font-size: .8em;
+  
+	background-color: var(--orange);
+	background-image:
+		linear-gradient(
+		    25deg,
+			  transparent 65%,
+			  var(--line-color),
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -25deg,
+			  transparent 65%,
+			  var(--line-color),
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -25deg,
+			  transparent 30%,
+			  var(--line-color),
+			  transparent 35%
+		    ),
+		linear-gradient(
+		    25deg,
+			  transparent 30%,
+			  var(--line-color),
+			  transparent 35%
+		    ),		
+		
+		linear-gradient(
+		    65deg,
+			  transparent 65%,
+			  var(--line-color),
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -65deg,
+			  transparent 65%,
+			  var(--line-color),
+			  transparent 70%
+		    ),
+		linear-gradient(
+		    -65deg,
+			  transparent 30%,
+			  var(--line-color),
+			  transparent 35%
+		    ),
+		linear-gradient(
+		    65deg,
+			  transparent 30%,
+			  var(--line-color),
+			  transparent 35%
+		    );
+	background-size: 
+		5em 2em,
+		5em 2em,
+		5em 2em,
+		5em 2em,
+		
+		2em 5em,
+		2em 5em,
+		2em 5em,
+		2em 5em;
+	}

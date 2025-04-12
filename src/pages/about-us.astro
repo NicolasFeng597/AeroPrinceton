@@ -1,40 +1,79 @@
 ---
 import "../styles/global.css";
 import "../styles/bullet.css";
+import "../styles/aboutUs.css";
 import Layout from "../layouts/Layout.astro";
 const title = "About Us";
 ---
 
 <Layout pageTitle={title}>
-	<h1 class="title" style="padding: 50px;">About Us</h1>
+	<div class="bigVid">
+		<h1 class="main-para">
+			About Us
+		</h1>
+		<video playsinline autoplay muted loop id="background-video">
+			<source src="/video2.mp4" type="video/mp4">
+		</video>
+	</div>
+	
+	<br>
+
 	<div class="bullet-about-us">
-		<p class="intro-text" style="padding: 50px;">
+		<p class="intro-text">
 			<b class="aero-bullet">Aero</b><b class="princeton-bullet">Princeton</b>
-			<br></be>is the only student-run club building full-scale, piloted aircraft in the world. The goal of the AeroPrinceton Aviation Club is to teach technical skills and apply them in a team setting to create a fully functional FAA approved Airplane.
+			</be>
+			is the <em>only</em> college student-run club building full-scale, 
+			piloted aircraft <em>in the world.</em> 
+			<br>
+			<br>
+			Our goal is to students teach technical 
+			skills and apply them to create a 
+			fully-functional FAA approved Airplane.
 		</p>
-		<!-- <div class="bullet-image">
-			<img src="/plane3.jpg">
-		</div> -->
+		<br>
+		<div class="bullet-image">
+			<img src="../public/plane3.jpg">
+		</div>
 	</div>
 
-	<h2>Values</h2>
-	<p style="padding: 50px;">
-		Where the vast majority of what we learn at school never leaves the classroom, this organization provides a unique venue to introduce students directly to aviation in a practical, hands-on way.
-		<br><br>
-		We envision a smaller world, where our lives can be more connected with the people that matter to us most. We hope that through our organization, we can support other college students in starting their own airplane building clubs.
-		<br><br>
-		Our ultimate goals are (a) to design and build a completely original plane based on the experience that we gain during our time in college, and (b) to create the first ever transcontinental collegiate air race with the Zenith CH 750.
-	</p>
-	<!-- <div class="bullet">
-		<p>
-			<b class="aero-bullet">Aero</b><b class="princeton-bullet">Princeton</b>
-			<br></be>is the only student-run club building full-scale, piloted aircraft in the world. The goal of the AeroPrinceton Aviation Club is to teach technical skills and apply them in a team setting to create a fully functional FAA approved Airplane.
-		</p>
+	<table style="width:100%">
+		<tr>
+		  	<td>
 
-		<div class="bullet-image">
-			<video playsinline autoplay muted loop id="background-video">
-				<source src="/video2.mp4" type="video/mp4">
-			</video>
-		</div>
-	</div> -->
+				<h2>Our Values</h2>
+				
+				We aim to provide students with a unique opportunity to apply 
+				classroom  subjects directly to aviation in a practical, 
+				hands-on way. 
+				<br><br>
+				Teach students skills in riveting, wiring, and 
+				metal work, etc. and applying them to create a fully functional FAA 
+				approved Airplane.
+				<br><br>
+				Support other Colleges in starting their own airplane building clubs.
+				<br><br>
+				
+			</td>
+			<td>
+				<h2>Goals</h2>
+				<ul>	
+					<li>Design and build a completely original 
+					plane of our own design</li>
+					<br>
+					<li>Create the <u>first ever</u> transcontinental 
+					collegiate air race in self-built airplanes.</li>	
+					<br>
+					<li>Assist in pilot license (PPL) acquisition.</li>
+					<br>
+					<li>Counting build hours toward an 
+					Aircraft-and-Powerplant Mechanic License</li>
+				</ul>
+				
+				
+			</td>
+		</tr>
+	</table>
+		<br>
+		<br>
+
 </Layout>
