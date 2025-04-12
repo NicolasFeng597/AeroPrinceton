@@ -6,63 +6,17 @@ const title = "Donate";
 ---
 
 <Layout pageTitle={title}>
-	<div class="donor-page">
-		<div class="text-block">
-			<h1 class="title">Donate</h1>
-
-			<p class="intro-text">
-				Thank you for supporting our mission by donating to AeroPrinceton!
-				<br><br>
-				<!-- <b class="aero-bullet">Aero</b><b class="princeton-bullet">Princeton</b>! -->
-			</p>
-			<p >
-				<em style="justify-content:none;">AeroPrinceton is a 501(c)(3) Non-Profit Organization.</em></p>
-			<p> 
-				We offer donors various benefits that vary based on donation size,
-				including:
-				<br>
-				Your logo/name on the airplane (for any donation), 
-				access to the hangar, and even flights in the airplane. 
-				The full list of benefits are listed in our 
-				<a class="donateLink link" href="https://drive.google.com/file/d/1qzq_LMc86X0qlVpzY1-T6G2_sPmqjHAC/view">Donor Packet</a>.
-			</p>
-			
-			<!-- <hr size="5px" color="black"> -->
-			<br>
-		</div>
-		<div class="donate_box">
-			<script align = "center" src="https://donorbox.org/widget.js"></script> 
-			<iframe title="DonorBox Form" src="https://donorbox.org/embed/aeroprinceton-donation-form?" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important" allow="payment"></iframe>
-		</div>
-		<br>
-		<div class="text-block">
-			<p class="sub-text" style="margin-top: -80px; margin-bottom: 50px;">
-				For donations over $500, please use check, or contact us via email at 
-				<a class="link" href="mailto:donate@aeroprinceton.com">donate@aeroprinceton.com</a>
-				so we may provide you with a more efficient and lossless means of donation. 
-				<br>
-				<br>
-				<br>
-				<b>CHECK</b>
-				<br>
-				<br>
-				Donations to AeroPrincetonmay be made by sending a check payable to ‘AeroPrinceton’ at the address:
-				<br>
-				<br>
-				<b align="center" style="width: 500px; text-align: center;" >
-					0967 Frist Campus Center
-					Princeton, NJ 08544
-				</b>
-				<br>
-				<br>
-				and writing “Donation” in the memo.
-
-			</p>
-			<br>
-			<br>
-			<br>
-			<br>
-
-		</div>
+	<h1 class="title">Donate</h1>
+	<p class="intro-text">
+		Thank you for supporting our mission by donating to AeroPrinceton!
+		<br><br>
+		<!-- <b class="aero-bullet">Aero</b><b class="princeton-bullet">Princeton</b>! -->
+	</p>
+	<p class="sub-text" style="margin-top: -100px">AeroPrinceton is both a State and Federally recognized 501(c)(3) non-profit organization, so all monetary donations to the organization are fully tax-deductible.</p>
+	<p class="sub-text" style="margin-top: -80px">We offer donors various benefits that vary based on donation size. Examples of benefits include: a logo/name on the airplane and in media for all donors, and for larger donations, access to the hangar and flights in the completed airplane. The full list of benefits are listed in our <a class="link" href="https://drive.google.com/file/d/1qzq_LMc86X0qlVpzY1-T6G2_sPmqjHAC/view">Donor Packet</a>.</p>
+	<p class="sub-text" style="margin-top: -80px; margin-bottom: 50px;">Donations are accepted below: </p>
+	<!-- <script src="https://donorbox.org/widget.js"></script> <iframe src="https://donorbox.org/embed/aeroprinceton-donation-form?" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important" allow="payment"></iframe> -->
+	<div class="donate_box">
+		<a class="dbox-donation-page-button" href="https://donorbox.org/aeroprinceton-donation-form?" style="background: rgb(42, 103, 144); color: rgb(255, 255, 255); text-decoration: none; font-family: Verdana, sans-serif; display: flex; gap: 8px; width: fit-content; font-size: 16px; border-radius: 5px; line-height: 24px; padding: 8px 24px;"><img src="https://donorbox.org/images/white_logo.svg">Donate</a>
 	</div>
 </Layout>
