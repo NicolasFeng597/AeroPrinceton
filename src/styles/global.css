@@ -90,7 +90,7 @@ li {
   font-family: var(--tfont);
   font-weight: 400px;
   letter-spacing: 1.60px;
-  padding: 10px 40px;
+  padding: 10px 20px;
 }
 
 b {
@@ -108,8 +108,8 @@ hr {
   size: 5px;
   color: black;
   margin-top: 40px; 
-  margin-left: 50px; 
-  margin-right: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 table, th, td {
@@ -133,7 +133,7 @@ table, th, td {
   /* width:100%; */
 /* } */
 
-ul {
+ul ol {
   display: block;
   list-style-type: disc;
   margin-left: 0;
@@ -280,6 +280,25 @@ video {
   word-wrap: break-word;
   padding-left: 40px;
   padding-top: 100px;
+}
+
+.main-para {
+  /* color: black;
+  font-weight: bold; */
+  color: white;
+  /* width: 50%; */
+  float:right;
+
+
+  max-width: 100%;
+  padding: 20px 20px;
+  z-index: 1;
+  font-size: 5vw;
+  
+  position: absolute;
+  display: flex; 
+  padding-left: 10%; 
+  /* text-align: center; */
 }
 
 /**********/
