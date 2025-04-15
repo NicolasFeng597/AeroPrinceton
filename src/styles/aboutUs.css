@@ -63,11 +63,16 @@ ul, ol{
 @media (max-width: 768px) {
    .values-goals-wrapper {
    flex-direction: column;
+   overflow-wrap: anywhere;
+   display: flex;
    }
 
    .values, .goals {
    border-right: none;
    /* border-bottom: 1px solid black; */
+   flex-direction: column;
+   overflow-wrap: anywhere;
+   display: flex;
    }
 
    .goals {

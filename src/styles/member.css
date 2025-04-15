@@ -26,6 +26,20 @@
    height: 300px;
    overflow: hidden;
    border-radius: 12px;
+               
+   
+   display: inline-block;
+   /* position: relative; */
+   box-shadow: 0 0 5px rgb(0,0,0);
+
+   width: 50vw;
+   height: 30vw;
+   scale: 1;
+
+   border-radius: 12px;
+   object-position: center;
+   align-items: center;
+   justify-content: center;
 }
 
 .member-image img{

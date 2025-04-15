@@ -7,7 +7,7 @@
 /* select the nav container and apply properties */
 .footer-container{
    background-color: rgb(203, 203, 203);
-   overflow: hidden;
+   overflow: auto;
    /* apply flex to get right and left navigations in a row */
    display: flex;
    /* push both the blocks to the edges using justify-content */
@@ -25,7 +25,7 @@
 /* style the anchor elements */
 .socials li a, .footer-left li a{
    text-decoration: none;
-   display: block;
+   display: flex;
    width: 100%;
    height: 100%;
    font-size: 15px;
@@ -47,6 +47,28 @@
 .footer-text {
    font-size: 15px;
    color: #333;
+   background-color: rgb(203, 203, 203);
    padding: 30px 50px;
    font-family: Montserrat;
+}
+
+.bg {
+   background-color: rgb(203, 203, 203);
+}
+
+@media screen and (max-width: 1053px) {
+   .links{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+      padding: 15px 0;
+   }
+
+   .footer-container{
+   overflow-wrap: anywhere;
+   
+   }
+
 }
