@@ -44,6 +44,7 @@
    min-width: 300px;
    padding: 20px;
    box-sizing: border-box;
+   margin-right: 10px;
    /* border-right: 1px solid black; */
 }
 
@@ -73,6 +74,7 @@ ul, ol{
    flex-direction: column;
    overflow-wrap: anywhere;
    display: flex;
+   margin-right: 10px;
    }
 
    .goals {

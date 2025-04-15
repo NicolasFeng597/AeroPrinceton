@@ -1,12 +1,11 @@
-.title {
+/*  USE For header */
+.title{
    font-size: 50px;
    color: white;
-   background-color: black;
-   width:100%;
-   padding-top: 10px;
-   padding-bottom: 10px;
+   /* font-size: 2em;  */
    margin-bottom: 10px;
-}
+   padding: 20px;
+} 
 
 .member-container{
    display: flex;
@@ -32,7 +31,7 @@
    /* position: relative; */
    box-shadow: 0 0 5px rgb(0,0,0);
 
-   width: 50vw;
+   width: 30vw;
    height: 30vw;
    scale: 1;
 
