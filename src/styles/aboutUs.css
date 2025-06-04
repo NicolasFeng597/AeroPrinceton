@@ -8,14 +8,14 @@
 
  }
 
- p, ul, ol {
+ p {
     /* padding: 30px; */
-    padding-left: 12%;
+    /* padding-left: 12%; */
     /* padding-right: 12%; */
-    text-align: justify;
+    text-align:left;
     max-width: 1000px;
     font-size: medium;
-    position:relative;
+    /* position:relative; */
   
   }
 
@@ -26,7 +26,7 @@
     font-weight: 400;
     letter-spacing: .60px;
     padding-left: 50px;
-    /* padding-right: 50px; */
+    padding-right: 50px;
 }
 
 /* Box At The Bottom */
@@ -46,6 +46,13 @@
    box-sizing: border-box;
    margin-right: 10px;
    /* border-right: 1px solid black; */
+   /* padding: 30px; */
+    padding-left: 12%;
+    /* padding-right: 12%; */
+    text-align:left;
+    max-width: 1000px;
+    font-size: medium;
+    position:relative;
 }
 
 .goals {
@@ -69,12 +76,12 @@ ul, ol{
    }
 
    .values, .goals {
-   border-right: none;
+   /* border-right: none; */
    /* border-bottom: 1px solid black; */
    flex-direction: column;
    overflow-wrap: anywhere;
    display: flex;
-   margin-right: 10px;
+   /* margin-right: 10px; */
    }
 
    .goals {
