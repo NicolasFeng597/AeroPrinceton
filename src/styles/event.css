@@ -9,12 +9,14 @@ h2 {
 
 }
 h3{
-padding-top: 20px;
-padding-bottom: 20px;
-padding-left: 12%;
-font-size: 35px;
-color: rgb(0, 0, 0);
-/* position: relative; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 12%;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  /* -webkit-text-stroke: 2px white; width and color */
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  /* position: relative; */
 }
 
 p {
@@ -83,10 +85,16 @@ iframe {
   border-bottom-right-radius: 0px;
   
 }
+.collapsible:after, .active:after {
+  transition: transform 0.3s ease;
+}
 
 /* add a (+) to the end of the section */
 .collapsible:after {
-  content: '\002B';
+  /* content: '\002B'; */
+  content: "\003C";
+  display: inline-block;
+  transform: rotate(270deg);
   font-weight: bold;
   /* float: right; */
   margin-left: 5px;
@@ -94,7 +102,10 @@ iframe {
 
 /* add a (-) to the end of the section */
 .active:after {
-  content: "\2212";
+  content: "\003C";
+  display: inline-block;
+  transform: rotate(90deg);
+  /* content: "\21BE"; */
 }
 
 /* content for the collapsible */

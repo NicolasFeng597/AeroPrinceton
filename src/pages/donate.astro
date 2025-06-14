@@ -6,62 +6,117 @@ const title = "Donate";
 ---
 
 <Layout pageTitle={title}>
-	<div class="donor-page">
-		<div class="text-block">
+	<section class="triangle">
+		<div class="donor-page">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
 			<h1 class="title">Donate</h1>
+			<div class="text-block">
 
-			<p class="intro-text">
-				Thank you for supporting our mission by donating to AeroPrinceton!
-				<br><br>
-				<!-- <b class="aero-bullet">Aero</b><b class="princeton-bullet">Princeton</b>! -->
-			</p>
-			<p >
-				<em style="justify-content:none;">AeroPrinceton is a 501(c)(3) Non-Profit Organization.</em></p>
-			<p> 
-				We offer donors various benefits that vary based on donation size,
-				including:
+				<p class="intro-text">
+					Thank you for supporting our mission by donating to AeroPrinceton!
+					<br><br>
+					<!-- <b class="aero-bullet">Aero</b><b class="princeton-bullet">Princeton</b>! -->
+				</p>
+				<p >
+					<em style="justify-content:none;">AeroPrinceton is a 501(c)(3) Non-Profit Organization.</em></p>
+				<p> 
+					We offer donors various benefits that vary based on donation size,
+					including:
+					<br>
+					Your logo/name on the airplane (for any donation), 
+					access to the hangar, and even flights in the airplane. 
+					The full list of benefits are listed in our 
+					<a class="donateLink link" href="https://drive.google.com/file/d/1S_yU7JIYu3oy50PhbFIJSS4qLxTa-h9i/view?usp=sharing">Donor Packet</a>.
+				</p>
+				
+				<!-- <hr size="5px" color="black"> -->
 				<br>
-				Your logo/name on the airplane (for any donation), 
-				access to the hangar, and even flights in the airplane. 
-				The full list of benefits are listed in our 
-				<a class="donateLink link" href="https://drive.google.com/file/d/10oa3RMa7nvoFC0atYLr_62bjzXeoNSjT/view?usp=sharing">Donor Packet</a>.
-			</p>
-			
-			<!-- <hr size="5px" color="black"> -->
+			</div>
+			<div class="donate_box">
+				<script align = "center" src="https://donorbox.org/widget.js"></script> 
+				<iframe title="DonorBox Form" src="https://donorbox.org/embed/aeroprinceton-donation-form?" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important" allow="payment"></iframe>
+			</div>
 			<br>
-		</div>
-		<div class="donate_box">
-			<script align = "center" src="https://donorbox.org/widget.js"></script> 
-			<iframe title="DonorBox Form" src="https://donorbox.org/embed/aeroprinceton-donation-form?" name="donorbox" allowpaymentrequest="allowpaymentrequest" seamless="seamless" frameborder="0" scrolling="no" height="900px" width="100%" style="max-width: 500px; min-width: 250px; max-height:none!important" allow="payment"></iframe>
-		</div>
-		<br>
-		<div class="text-block">
-			<p class="sub-text" style="margin-top: -80px; margin-bottom: 50px;">
-				For donations over $500, please use check, or contact us via email at 
-				<a class="link" href="mailto:donate@aeroprinceton.com">donate@aeroprinceton.com</a>
-				so we may provide you with a more efficient and lossless means of donation. 
-				<br>
-				<br>
-				<br>
-				<b>CHECK</b>
-				<br>
-				<br>
-				Donations to AeroPrinceton may be made by sending a check payable to ‘AeroPrinceton’ at the address:
-				<br>
-				<br>
-				<b align="center" style="width: 500px; text-align: center;" >
-					0967 Frist Campus Center
-					Princeton, NJ 08544
-				</b>
-				<br>
-				<br>
-				and writing “Donation” in the memo.
+			<div class="text-block">
+				<p class="sub-text" style="margin-top: -80px; margin-bottom: 50px;">
+					For donations over $500, please use check, or contact us via email at 
+					<a class="link" href="mailto:donate@aeroprinceton.com">donate@aeroprinceton.com</a>
+					so we may provide you with a more efficient and lossless means of donation. 
+					<br>
+					<br>
+					<br>
+					<b>CHECK</b>
+					<br>
+					<br>
+					Donations to AeroPrinceton may be made by sending a check payable to ‘AeroPrinceton’ at the address:
+					<br>
+					<br>
+					<b align="center" style="width: 500px; text-align: center;" >
+						0967 Frist Campus Center
+						Princeton, NJ 08544
+					</b>
+					<br>
+					<br>
+					and writing “Donation” in the memo.
 
-			</p>
+				</p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br> 
+			</div>
+		</div>
+	</section>
+	<div class="donors">
+		<div class="donorList">
 			<br>
 			<br>
 			<br>
 			<br>
+			<br>
+			<h1 class="title">Supporters</h1>
+			<br>
+			<h2 class="donorLable">Flight Engineer</h2>
+			<ul class="brands">
+				<!-- <li class="brands__item">
+					<a href="#">
+						<img src="/favicon.png" alt="" />
+					</a>
+				</li> -->
+				
+				<li class="brands__item">
+					<a>
+						<h4 style="color: white;">Markita Rogers</h4>
+					</a>
+				</li>
+			</ul>
+			<hr>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h2 class="donorLable">Ground Crew</h2>
+			<ul class="brands">
+				<li class="brands__item">
+					<a>
+						<h4 style="color: white;">Christopher Grey</h4>
+					</a>
+				</li>
+				<li class="brands__item">
+					<a>
+						<h4 style="color: white;">Ransom Baldwin</h4>
+					</a>
+				</li>
+			</ul>
+
+
 
 		</div>
 	</div>

@@ -4,7 +4,7 @@
    display: flex;
    justify-content: center;
    margin-top: 60px;
-   margin-bottom: 60px;
+   /* margin-bottom: 60px; */
    /* https://www.youtube.com/watch?v=wiIbol5tZaI */
    backdrop-filter: invert(100%);
    scroll-behavior: smooth;
@@ -45,7 +45,7 @@ h1 {
    /* background-image: url("https: //drive .google .com/file/d/ 1RQxzZO mvToJbwWVX_GY 4J 4LXJUzv_wf /view;");  */
    background-repeat: repeat;
    background-attachment: fixed;
-   /* background-size: cover; */
+   background-size: cover;
    background-size: 500px 500px;
    background-position: center;
    

@@ -1,5 +1,8 @@
 :root {
   --line-color: rgba(199, 73, 0, 0.291);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .bgImage {
@@ -33,7 +36,7 @@ iframe {
   border-width: 10px;
   border-radius: 12px;
   border-style:ridge;
-  border-color: #474e5d;
+  border-color: black;
   background-color: white;
   /* width:100%; */
   width: 400px;
@@ -53,26 +56,12 @@ p {
 }
 
 
-.donor-page {
-  /*  Deep Princeton orange to light orange  */
-  /* background: linear-gradient(135deg, , );*/
-  /* background-image: linear-gradient(to bottom right,#E67725, var(--orange), #FFB347); */
-  min-height: 100vh;
-  /* padding: 60px 20px; */
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
 .donate_box {
   /* width: 100%; */
   justify-content: center;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding-top: 10px; 
 }
 
 .donateLink:link, .donateLink:visited {
@@ -100,11 +89,44 @@ p {
 
 }
 
+/* Page Divider */
+
+:root {
+  /* Height of the cut*/
+  --cut: 100px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.donor-page .title {
+  align-self: flex-start;
+  margin-left: 5%; /* Match .donorList horizontal offset */
+}
+
+
+/* ********** */
 /* Background */
+/* ********** */
 
 
 
 .donor-page {
+  z-index: -2;
+  /*  Deep Princeton orange to light orange  */
+  /* background: linear-gradient(135deg, , );*/
+  /* background-image: linear-gradient(to bottom right,#E67725, var(--orange), #FFB347); */
+  min-height: 100vh;
+  /* padding: 60px 20px; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
 	font-size: .8em;
   
 	background-color: var(--orange);
@@ -168,4 +190,137 @@ p {
 		2em 5em,
 		2em 5em,
 		2em 5em;
-	}
+}
+
+section {
+  background-color: #404040;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* section h1 {
+  font-size: 2.5rem;
+  color: #404040;
+  background-color: whitesmoke;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+} */
+
+/* .tilt {
+  background: linear-gradient(to right, #1d976c, #93f9b9);
+  Clip the bottom part of this section
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--cut)));
+  Higher z-index value than next section
+  z-index: 3;
+  position: relative;
+} */
+
+.triangle {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - var(--cut)),
+    50% 100%,
+    0 calc(100% - var(--cut))
+  );
+  /*Close the gap with the previous section*/
+  margin-top: calc(var(--cut) * -1);
+  
+  /* Higher z-index value than next section */
+  z-index: 2;
+  position: relative;
+}
+
+/* *********** */
+/*    Donors   */
+/* *********** */
+
+.donors {
+  width: 100%;
+  height: 1000px;
+  background: black;
+  margin-top: calc(var(--cut) * -1);
+  z-index: 1;
+  position: relative;
+}
+
+.donorList {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.donorLable {
+  text-align: center;
+  color: var(--orange);
+  padding:0px;
+  margin: 0px;
+  width:100%;;
+
+}
+
+.brands {
+  /* display: grid; */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 3rem;
+
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li.brands__item {
+  flex: 0 0 50%;
+  /* background: #eee; */
+  list-style: none;
+  padding:0px;
+  width: 260px;
+  height: 150px;
+  max-width: 260px;
+  max-height: 150px;
+}
+
+.brands__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  /* width: 100%; */
+
+  object-fit: contain;
+}
+
+.brands__item img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  display: block;
+  /* Make sure max-width is added */
+  max-width: 100%;
+  max-height: 100%;
+  
+  object-fit: contain;
+  /* mix-blend-mode: multiply; */
+}
+
+/* .brands__item img[src$=".jpg"], .brands__item img[src$=".png"] {
+    mix-blend-mode: multiply;
+} */
+
+@media (min-width: 700px) {
+  .brands__item {
+    flex: 0 0 33.33%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .brands__item {
+    flex: 0 0 25%;
+  }
+}

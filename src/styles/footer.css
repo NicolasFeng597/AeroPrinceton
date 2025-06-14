@@ -4,9 +4,11 @@
    box-sizing: border-box;
 }
 
+
+
 /* select the nav container and apply properties */
 .footer-container{
-   background-color: rgb(203, 203, 203);
+   background-color: var(--gray);
    overflow: auto;
    /* apply flex to get right and left navigations in a row */
    display: flex;
@@ -18,6 +20,10 @@
 .socials, .footer-left{
    list-style-type: none;
 }
+.footer-left li {
+   padding: 0px;
+}
+
 /* change li display property from block to inline block */
 .socials li, .footer-left li{
    display: inline-block;
@@ -47,13 +53,13 @@
 .footer-text {
    font-size: 15px;
    color: #333;
-   background-color: rgb(203, 203, 203);
-   padding: 30px 50px;
+   background-color: var(--gray);
+   padding: 2vw, 1vw;
    font-family: Montserrat;
 }
 
 .bg {
-   background-color: rgb(203, 203, 203);
+   background-color: var(--gray);
 }
 
 @media screen and (max-width: 1053px) {

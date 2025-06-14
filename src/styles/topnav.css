@@ -6,6 +6,8 @@
 
 /* select the nav container and apply properties */
 .nav-container {
+   z-index: 10;
+   position: relative;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -147,7 +149,13 @@ img {
    font-weight: bold;
    display: inline-block;
    text-align: center;
+   /* border-style:outset; */
 }
+
+/* .join-donate-links a[href="/join/"]:hover { */
+   /* color: var(--orange); */
+   /* border-style:inset; */
+/* } */
 
 .join-donate-links a[href="/donate/"] {
    background-color: var(--orange);
@@ -160,6 +168,11 @@ img {
    display: inline-block;
    text-align: center;
 }
+/* 
+.join-donate-links a[href="/donate/"]:hover {
+   color: black;
+} */
+
 
 /* .mobile_only a {
    display: none;

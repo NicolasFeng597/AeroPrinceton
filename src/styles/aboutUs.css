@@ -42,17 +42,19 @@
 .values, .goals {
    flex: 1;
    min-width: 300px;
-   padding: 20px;
+   margin: 20px;
    box-sizing: border-box;
-   margin-right: 10px;
+   margin-right: 3%;
    /* border-right: 1px solid black; */
    /* padding: 30px; */
-    padding-left: 12%;
-    /* padding-right: 12%; */
-    text-align:left;
-    max-width: 1000px;
-    font-size: medium;
-    position:relative;
+   margin-left: 3%;
+   /* padding-right: 12%; */
+   text-align:left;
+   max-width: 1000px;
+   font-size: medium;
+   position:relative;
+   background-color: var(--gray);
+   border-radius: 12px;
 }
 
 .goals {
@@ -65,7 +67,7 @@
 }
 
 ul, ol{
-   padding-left: 2rem;
+   padding-left: 5rem;
 }
 
 @media (max-width: 768px) {
@@ -81,6 +83,7 @@ ul, ol{
    flex-direction: column;
    overflow-wrap: anywhere;
    display: flex;
+   padding-left: 5%;
    /* margin-right: 10px; */
    }
 

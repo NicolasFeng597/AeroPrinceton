@@ -22,6 +22,7 @@
   --bgcolor:#f1f5f9;
   --orange: #E67725;
   --accent: black;
+  --gray: rgb(203, 203, 203);
   /* --accent: #2A6790; WE ARE NOT USING THIS */
   --tfont: "Montserrat";
   --maxWidth: 700px;
@@ -77,7 +78,7 @@ h2 {
 
 p {
   color: black;
-  font-size: 15px;
+  font-size: 25px;
   font-family: var(--tfont);
   font-weight: 400px;
   letter-spacing: 1.60px;
@@ -86,7 +87,7 @@ p {
 
 li {
   color: black;
-  font-size: 15px;
+  font-size: 25px;
   font-family: var(--tfont);
   font-weight: 400px;
   letter-spacing: 1.60px;
@@ -105,11 +106,12 @@ em {
 }
 
 hr {
-  size: 5px;
-  color: black;
-  margin-top: 40px; 
-  margin-left: 5%;
-  margin-right: 5%;
+  size: 0.001px;
+  color: var(--gray);
+  /* margin-top: 40px;  */
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
 }
 
 table, th, td {
@@ -231,7 +233,7 @@ video {
 
 .intro-text{
   color: black;
-  font-size: 20px;
+  font-size: 25px;
   font-family: var(--tfont);
   font-weight: 400;
   letter-spacing: 1.60px;
@@ -253,13 +255,24 @@ video {
 
 }
 
+.hcontainer { /* Heading Container */
+  width: 100%;
+  max-width: 1200px; /* adjust based on your design */
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+
 .text-block {
-  width: 900px;             /* Fixed width of the text block */
+  width: 1000px;            /* Fixed width of the text block */
   max-width: 100%;          /* Allow the text block to resize up to 100% of its container */
   margin: 0 auto;           /* Centers the block horizontally */
   text-align: justify;      /* Justifies the text */
   padding: 0px;            /* Adds margin inside the block */
   box-sizing: border-box;   /* Ensures padding doesn't overflow the block */
+  style: line-height 100a;
+  /* font-size: 20px; */
 }
 
 .home-description {
@@ -320,4 +333,10 @@ video {
   font-weight: 400;
   letter-spacing: 4px;
   word-wrap: break-word;
+}
+@media (max-width: 768px) {
+  li, p {
+    font-size: 15px;
+
+  }
 }
