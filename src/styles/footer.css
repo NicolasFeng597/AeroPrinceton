@@ -21,7 +21,10 @@
    list-style-type: none;
 }
 .footer-left li {
-   padding: 0px;
+   padding: 0px !important;
+}
+ul.footer-left {
+   padding: 0px !important;
 }
 
 /* change li display property from block to inline block */

@@ -1,7 +1,7 @@
 :root {
   --p: 12px;
   --iron: #263238;
-  --font: faune, fantasy;
+  /* --font: faune, fantasy; */
 }
 
 *, *::before, *::after {

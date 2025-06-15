@@ -28,8 +28,10 @@ const frontmatter = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content={description} />
+		<!-- include size for icon  -->
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
+		<meta http-equiv="Permissions-Policy" content="camera=(), microphone=()">
 		<ClientRouter></ClientRouter>
 		<!-- <title>{frontmatter.title}</title> -->
 		<title> {title} </title>

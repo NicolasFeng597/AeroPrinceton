@@ -16,9 +16,129 @@
    background: white;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
    min-height: 81px;
-   width:100vw;
+   /* width:100vw; */
+   width:100%;
    overflow-x: hidden;
 }
+
+.nav-container figcaption {
+   z-index: 20000000;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+}
+
+.nav-container fieldset {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  padding: calc(var(--p) / 4);
+}
+
+.nav-container label,
+.nav-container .photo-link {
+  cursor: pointer;
+}
+
+.nav-container .photo-link {
+  will-change: opacity;
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding: calc(var(--p) / 4);
+}
+
+.navcontainer .icon {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.nav-container input {
+    z-index: 10;
+  display: none;
+}
+
+.nav-container input ~ label.photo-link {
+  display: none;
+}
+
+.nav-container input:checked ~ dl {
+  transform: none;
+  opacity: 1;
+  z-index: 2;
+}
+
+.nav-container input:checked ~ .photo-close {
+  z-index: unset;
+}
+
+.nav-container input:checked ~ label.photo-link {
+  opacity: 0;
+} 
+
+
+
+
+.nav-container dl {
+  transform: translateY(25%);
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.3s ease-out;
+  will-change: opacity, transform;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--p);
+  font-size: 20px;
+  color: white;
+  background-color: rgba(29, 39, 45, 0.9); /* darkened #263238 by ~10% */
+}
+
+.nav-container dl label,
+.nav-container dl .photo-link {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  padding: calc(var(--p) / 2);
+}
+
+.nav-container dl label {
+  top: 0;
+}
+
+.nav-container dl .photo-link {
+  bottom: 0;
+}
+
+.nav-container dl div {
+  position: relative;
+  z-index: 0;
+}
+
+.nav-container dl dt,
+.nav-container dl dd {
+  display: inline;
+}
+
+.nav-container dl dt {
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+.nav-container dl dt::after {
+  content: ": ";
+}
+
+
+
+
+
+
 
 .logo {
    display: flex;
@@ -65,7 +185,7 @@
 }
 
 .pages li {
-   display: inline-block;
+   /* display: inline-block; */
    padding: 20px;
 }
 
@@ -123,8 +243,8 @@ img {
    align-items: center;
 }
 
-.mobile_only {
-   display: none;
+li.mobile_only, li.a {
+   display: none !important;
    padding: 0px;
 }
 
@@ -177,21 +297,21 @@ img {
 /* .mobile_only a {
    display: none;
 } */
-@media screen and (max-width: 1053px) {
-.links{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 15px;
-   width: 100%;
-   padding: 15px 0;
-}
+@media screen and (max-width: 1122px) {
+   .links{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 100%;
+      padding: 15px 0;
+   }
 
    .join-donate-links{
       display: none;
    }
 
-   .pages {
+   /* .pages {
       display: none; 
       flex-direction: column;
       position: absolute;
@@ -201,14 +321,32 @@ img {
       background-color: white;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       z-index: 1000;
+   } */
+   .pages {
+      z-index: 20000;
+      display: none; /* hidden by default */
+      flex-direction: column;
+      position: fixed;
+      /* position: relative; */
+      /* position:fixed; */
+      top: 81px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      z-index: 1000;
    }
 
    .pages.mobile {
-      display: flex; 
+      /* display:flexbox; */
+      /* display:block;
+      position:fixed; */
+      display: flex;
       flex-direction: column;
       padding: 15px 0;
       padding-bottom: 30px;
    }
+
 
    .pages.mobile li {
       display: block; 
@@ -219,6 +357,11 @@ img {
    .pages.mobile a {
       display: block; 
       text-align: center;
+   }
+
+   li.mobile_only, li.a {
+      display: block !important;
+      padding: 0px;
    }
 
    .mobile_only {
@@ -259,4 +402,20 @@ img {
       color: black;
       text-decoration: none;
    }
+   
+
+   /* #main_nav {
+   display: none;
+   }
+
+   #main_nav.mobile {
+   display: block;
+   position: fixed; 
+   top: 0;
+   left: 0;
+   width: 100%;
+   background: white;
+   z-index: 999;
+   } */
+      
 }

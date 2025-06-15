@@ -339,4 +339,10 @@ video {
     font-size: 15px;
 
   }
+  h1, .title {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 30px;
+  }
 }

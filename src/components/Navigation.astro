@@ -4,46 +4,93 @@ import "../styles/topnav.css";
 ---
 
 <!-- <script src="../scripts/navbar.js"></script> -->
-<script>
-   window.open_hamburger = function () {
-      const nav = document.getElementById("main_nav");
-      const isOpen = nav.classList.contains("mobile");
-      nav.className = isOpen ? "pages" : "pages mobile";
+<script is:inline client:load>
+   // document.addEventListener("DOMContentLoaded", function () {
+   // const hamburger = document.getElementById("hamburger");
+   // const nav = document.getElementById("main_nav");
 
-      // Update aria-expanded for accessibility
-      const hamburger = document.querySelector(".hamburger a");
-      hamburger.setAttribute("aria-expanded", !isOpen);
-   };
+   // hamburger.addEventListener("click", function () {
+   //    nav.classList.toggle("mobile");
+   // });
+
+   // // Close menu on link click
+   // const navLinks = nav.querySelectorAll("a");
+   // navLinks.forEach(link => {
+   //    link.addEventListener("click", () => {
+   //       nav.classList.remove("mobile");
+   //    });
+   // });
+   // });
+
+
+
+
+   document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const pagesMenu = document.querySelector(".pages");
+
+  hamburger.addEventListener("click", () => {
+    pagesMenu.classList.toggle("mobile");
+  });
+
+  // Select all links inside the mobile menu
+  const menuLinks = pagesMenu.querySelectorAll("a");
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      // Remove mobile menu class to hide menu
+      pagesMenu.classList.remove("mobile");
+    });
+  });
+
+  // Optional: Close menu on scroll or clicking outside (if desired)
+  window.addEventListener("scroll", () => {
+    pagesMenu.classList.remove("mobile");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!pagesMenu.contains(e.target) && !hamburger.contains(e.target)) {
+      pagesMenu.classList.remove("mobile");
+    }
+  });
+
+   // Re-initialize after swapping pages
+   document.addEventListener("astro:after-swap", init)
+});
 </script>
 
 <nav class="nav-container">
-   <div class="logo">
-      <a href="/" class="home-logo">
-         <img src="/transparentlogo.png" alt="Aero Princeton Logo">
-      </a>
-      <a class="aero" href="/">Aero</a>
-      <a class="princeton" href="/">Princeton</a>
+  <div class="logo">
+    <a href="/" class="home-logo">
+      <img src="/transparentlogo.svg" alt="Aero Princeton Logo">
+    </a>
+    <a class="aero" href="/">Aero</a>
+    <a class="princeton" href="/">Princeton</a>
+  </div>
+
+  <div class="hamburger" id="hamburger" style="font-size:30px;">
+    ☰
+  </div>
+
+  <ul class="pages" id="main_nav">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about-us/">About Us</a></li>
+    <li><a href="/gallery/">Gallery</a></li>
+    <li><a href="/events/">Events</a></li>
+    <li><a href="/members/">Members</a></li>
+    <li class="mobile_only"><a href="/join/">Join</a></li>
+    <li class="mobile_only"><a href="/donate/">Donate</a></li>
+  </ul>
+  <div class="join-donate-links">
+      <a href="/join/">Join</a>
+      <a href="/donate/">Donate</a>
    </div>
-   <ul class="pages" id="main_nav">
-      <ul class="links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about-us/">About Us</a></li>
-      <li><a href="/gallery/">Gallery</a></li>
-      <li><a href="/events/">Events</a></li>
-      <li><a href="/members/">Members</a></li>
-   </ul>
-      <div class="join-donate-links">
-         <li><a href="/join/">Join</a></li>
-         <li><a href="/donate/">Donate</a></li>
-      </div>
-      <div class="mobile_only">
-         <a href="/join/">Join</a>
-         <a href="/donate/">Donate</a>
-      </div>
-   </ul>
-   <div class="hamburger">
+   <!-- <div class="mobile_only">
+      <a href="/join/">Join</a>
+      <a href="/donate/">Donate</a>
+   </div> -->
+</nav>
+   <!-- <div class="hamburger" id="hamburger">
       <a href="javascript:void(0);" onclick="open_hamburger()" aria-expanded="false" aria-label="Toggle navigation">
          <i class="fa fa-bars"></i>
       </a>
-   </div>
-</nav>
+   </div> -->
