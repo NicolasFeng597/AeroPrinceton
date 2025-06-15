@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import "../styles/global.css";
 import "../styles/bullet.css";
 import "../styles/gallery.css";
@@ -11,104 +12,6 @@ const title = "Gallery";
     <section class="photo-grid">
         <ul class="grid-isotope">
 
-            <!-- <li class="photo-grid-item">
-                <figure>
-                <label for="2021-03-02-home">
-                    <picture>
-                        <source srcset="https://gabriellew.ee/static/images/photography/2021-03-02-home.jpg, https://gabriellew.ee/static/images/photography/2021-03-02-home.jpg 2x" media="(max-width: 3000px)">
-                        <img src="https://gabriellew.ee/static/images/photography/2021-03-02-home.jpg" alt="">
-                    </picture>
-                </label>
-                <figcaption>
-                    <fieldset>
-                        <input id="2021-03-02-home" type="checkbox">
-                        <label class="photo-close" for="2021-03-02-home"></label>
-                        <label class="photo-link" for="2021-03-02-home">
-                            <svg class="icon" viewBox="0 0 100 100">
-                            <circle cx="49" cy="49" r="36"></circle>
-                            <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
-                            </svg>
-                        </label>
-                        
-                        <dl>
-                            <label for="2021-03-02-home">
-                            <svg class="icon" viewBox="0 0 100 100">
-                                <polyline points="14 32 50 68 86 32"></polyline>
-                            </svg>
-                            </label>
-                            <div>
-                            <dt>Date</dt>
-                            <dd>02 March 2021</dd>
-                            </div>
-                            <div>
-                            <dt>Location</dt>
-                            <dd>San Francisco, CA</dd>
-                            </div>
-                            <div>
-                            <dt>Camera</dt>
-                            <dd>iPhone 12 Pro Max</dd>
-                            </div>
-                            <div>
-                            <dt>Editor</dt>
-                            <dd>VSCO</dd>
-                            </div>
-                            <a class="photo-link" target="_blank" href="https://gabriellew.ee/static/images/photography/2021-03-02-home.jpg" tabindex="-1">
-                            <svg class="icon" viewBox="0 0 100 100">
-                                <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
-                            </svg>
-                            </a>
-                        </dl>
-                    </fieldset>
-                </figcaption>
-                </figure>
-            </li> -->
-            
-           
-            
-            <li class="photo-grid-item">
-                <figure>
-                
-                <picture>
-                    <img src="/galleryPhotos/Zenith CH 750.jpg" alt="">
-                </picture>
-                <figcaption>
-                    <fieldset>
-                    <input id="Zenith CH 750.jpg" type="checkbox">
-                    <label class="photo-close" for="Zenith CH 750.jpg"></label>
-                    <label class="photo-link" for="Zenith CH 750.jpg">
-                        <svg class="icon" viewBox="0 0 100 100">
-                        <circle cx="49" cy="49" r="36"></circle>
-                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
-                        </svg>
-                    </label>
-                    <dl>
-                        <label for="Zenith CH 750.jpg">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <polyline points="14 32 50 68 86 32"></polyline>
-                        </svg>
-                        </label>
-                        <div>
-                        <dt>Date</dt>
-                        <dd>June 14, 2025</dd>
-                        </div>
-                        <div>
-                        <dt>Location</dt>
-                        <dd>Princeton, NJ</dd>
-                        </div>
-                        <div>
-                        <dt>Description</dt>
-                        <dd>Zenith CH 750</dd>
-                        </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
-                        </svg>
-                        </a>
-                    </dl>
-                    </fieldset>
-                </figcaption>
-                </figure>
-            </li>
             <li class="photo-grid-item">
                 <figure>
                 
@@ -136,7 +39,7 @@ const title = "Gallery";
                         </label>
                         <div>
                         <dt>Date</dt>
-                        <dd>June 14, 2025</dd>
+                        <dd>June 15, 2025</dd>
                         </div>
                         <div>
                         <dt>Location</dt>
@@ -146,7 +49,7 @@ const title = "Gallery";
                         <dt>Description</dt>
                         <dd>Statue of Liberty</dd>
                         </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Statue of Liberty.MOV" tabindex="-1">
                         <svg class="icon" viewBox="0 0 100 100">
                             <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
                         </svg>
@@ -160,108 +63,20 @@ const title = "Gallery";
                 <figure>
                 
                 <picture>
-                    <img src="/galleryPhotos/Daytime Flight.jpeg" alt="">
+                    <img src="/galleryPhotos/Nick Akey & Kiele Trainor.JPG" alt="Nick Akey & Kiele Trainor">
                 </picture>
                 <figcaption>
                     <fieldset>
-                    <input id="Daytime Flight.jpeg" type="checkbox">
-                    <label class="photo-close" for="Daytime Flight.jpeg"></label>
-                    <label class="photo-link" for="Daytime Flight.jpeg">
+                    <input id="Nick Akey & Kiele Trainor.JPG" type="checkbox">
+                    <label class="photo-close" for="Nick Akey & Kiele Trainor.JPG"></label>
+                    <label class="photo-link" for="Nick Akey & Kiele Trainor.JPG">
                         <svg class="icon" viewBox="0 0 100 100">
                         <circle cx="49" cy="49" r="36"></circle>
                         <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
                         </svg>
                     </label>
                     <dl>
-                        <label for="Daytime Flight.jpeg">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <polyline points="14 32 50 68 86 32"></polyline>
-                        </svg>
-                        </label>
-                        <div>
-                        <dt>Date</dt>
-                        <dd>August 17, 2024</dd>
-                        </div>
-                        <div>
-                        <dt>Location</dt>
-                        <dd>Crystal Lake, AR</dd>
-                        </div>
-                        <div>
-                        <dt>Description</dt>
-                        <dd>Daytime Flight</dd>
-                        </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
-                        </svg>
-                        </a>
-                    </dl>
-                    </fieldset>
-                </figcaption>
-                </figure>
-            </li>
-            <li class="photo-grid-item">
-                <figure>
-                
-                <picture>
-                    <img src="/galleryPhotos/Finished Zenith Rudder.JPG" alt="">
-                </picture>
-                <figcaption>
-                    <fieldset>
-                    <input id="Finished Zenith Rudder.JPG" type="checkbox">
-                    <label class="photo-close" for="Finished Zenith Rudder.JPG"></label>
-                    <label class="photo-link" for="Finished Zenith Rudder.JPG">
-                        <svg class="icon" viewBox="0 0 100 100">
-                        <circle cx="49" cy="49" r="36"></circle>
-                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
-                        </svg>
-                    </label>
-                    <dl>
-                        <label for="Finished Zenith Rudder.JPG">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <polyline points="14 32 50 68 86 32"></polyline>
-                        </svg>
-                        </label>
-                        <div>
-                        <dt>Date</dt>
-                        <dd>May 16, 2025</dd>
-                        </div>
-                        <div>
-                        <dt>Location</dt>
-                        <dd>Mexico, MO</dd>
-                        </div>
-                        <div>
-                        <dt>Description</dt>
-                        <dd>Finished Zenith Rudder</dd>
-                        </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
-                        </svg>
-                        </a>
-                    </dl>
-                    </fieldset>
-                </figcaption>
-                </figure>
-            </li>
-            <li class="photo-grid-item">
-                <figure>
-                
-                <picture>
-                    <img src="/galleryPhotos/Nick Akey Flying.JPG" alt="">
-                </picture>
-                <figcaption>
-                    <fieldset>
-                    <input id="Nick Akey Flying.JPG" type="checkbox">
-                    <label class="photo-close" for="Nick Akey Flying.JPG"></label>
-                    <label class="photo-link" for="Nick Akey Flying.JPG">
-                        <svg class="icon" viewBox="0 0 100 100">
-                        <circle cx="49" cy="49" r="36"></circle>
-                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
-                        </svg>
-                    </label>
-                    <dl>
-                        <label for="Nick Akey Flying.JPG">
+                        <label for="Nick Akey & Kiele Trainor.JPG">
                         <svg class="icon" viewBox="0 0 100 100">
                             <polyline points="14 32 50 68 86 32"></polyline>
                         </svg>
@@ -276,9 +91,9 @@ const title = "Gallery";
                         </div>
                         <div>
                         <dt>Description</dt>
-                        <dd>Nick Akey Flying</dd>
+                        <dd>Nick Akey & Kiele Trainor</dd>
                         </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Nick Akey & Kiele Trainor.JPG" tabindex="-1">
                         <svg class="icon" viewBox="0 0 100 100">
                             <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
                         </svg>
@@ -292,37 +107,37 @@ const title = "Gallery";
                 <figure>
                 
                 <picture>
-                    <img src="/galleryPhotos/Airplane Wing Spar.jpg" alt="">
+                    <img src="/galleryPhotos/EAA Avionics Trianing Kit.jpg" alt="EAA Avionics Trianing Kit">
                 </picture>
                 <figcaption>
                     <fieldset>
-                    <input id="Airplane Wing Spar.jpg" type="checkbox">
-                    <label class="photo-close" for="Airplane Wing Spar.jpg"></label>
-                    <label class="photo-link" for="Airplane Wing Spar.jpg">
+                    <input id="EAA Avionics Trianing Kit.jpg" type="checkbox">
+                    <label class="photo-close" for="EAA Avionics Trianing Kit.jpg"></label>
+                    <label class="photo-link" for="EAA Avionics Trianing Kit.jpg">
                         <svg class="icon" viewBox="0 0 100 100">
                         <circle cx="49" cy="49" r="36"></circle>
                         <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
                         </svg>
                     </label>
                     <dl>
-                        <label for="Airplane Wing Spar.jpg">
+                        <label for="EAA Avionics Trianing Kit.jpg">
                         <svg class="icon" viewBox="0 0 100 100">
                             <polyline points="14 32 50 68 86 32"></polyline>
                         </svg>
                         </label>
                         <div>
                         <dt>Date</dt>
-                        <dd>June 14, 2025</dd>
+                        <dd>February 9, 2025</dd>
                         </div>
                         <div>
                         <dt>Location</dt>
-                        <dd>Princeton, NJ</dd>
+                        <dd>Manassas, VA</dd>
                         </div>
                         <div>
                         <dt>Description</dt>
-                        <dd>Airplane Wing Spar</dd>
+                        <dd>EAA Avionics Trianing Kit</dd>
                         </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/EAA Avionics Trianing Kit.jpg" tabindex="-1">
                         <svg class="icon" viewBox="0 0 100 100">
                             <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
                         </svg>
@@ -336,95 +151,7 @@ const title = "Gallery";
                 <figure>
                 
                 <picture>
-                    <img src="/galleryPhotos/Will Rogers & Kate Chrisco on a Cross-Country Flight.jpeg" alt="">
-                </picture>
-                <figcaption>
-                    <fieldset>
-                    <input id="Will Rogers & Kate Chrisco on a Cross-Country Flight.jpeg" type="checkbox">
-                    <label class="photo-close" for="Will Rogers & Kate Chrisco on a Cross-Country Flight.jpeg"></label>
-                    <label class="photo-link" for="Will Rogers & Kate Chrisco on a Cross-Country Flight.jpeg">
-                        <svg class="icon" viewBox="0 0 100 100">
-                        <circle cx="49" cy="49" r="36"></circle>
-                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
-                        </svg>
-                    </label>
-                    <dl>
-                        <label for="Will Rogers & Kate Chrisco on a Cross-Country Flight.jpeg">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <polyline points="14 32 50 68 86 32"></polyline>
-                        </svg>
-                        </label>
-                        <div>
-                        <dt>Date</dt>
-                        <dd>January 9, 2025</dd>
-                        </div>
-                        <div>
-                        <dt>Location</dt>
-                        <dd>Bentonville, AR</dd>
-                        </div>
-                        <div>
-                        <dt>Description</dt>
-                        <dd>Will Rogers & Kate Chrisco on a Cross-Country Flight</dd>
-                        </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
-                        </svg>
-                        </a>
-                    </dl>
-                    </fieldset>
-                </figcaption>
-                </figure>
-            </li>
-            <li class="photo-grid-item">
-                <figure>
-                
-                <picture>
-                    <img src="/galleryPhotos/Will on a Cross Country Flight.png" alt="">
-                </picture>
-                <figcaption>
-                    <fieldset>
-                    <input id="Will on a Cross Country Flight.png" type="checkbox">
-                    <label class="photo-close" for="Will on a Cross Country Flight.png"></label>
-                    <label class="photo-link" for="Will on a Cross Country Flight.png">
-                        <svg class="icon" viewBox="0 0 100 100">
-                        <circle cx="49" cy="49" r="36"></circle>
-                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
-                        </svg>
-                    </label>
-                    <dl>
-                        <label for="Will on a Cross Country Flight.png">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <polyline points="14 32 50 68 86 32"></polyline>
-                        </svg>
-                        </label>
-                        <div>
-                        <dt>Date</dt>
-                        <dd>June 14, 2025</dd>
-                        </div>
-                        <div>
-                        <dt>Location</dt>
-                        <dd>Princeton, NJ</dd>
-                        </div>
-                        <div>
-                        <dt>Description</dt>
-                        <dd>Will on a Cross Country Flight</dd>
-                        </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
-                        </svg>
-                        </a>
-                    </dl>
-                    </fieldset>
-                </figcaption>
-                </figure>
-            </li>
-            <li class="photo-grid-item">
-                <figure>
-                
-                <picture>
-                    <img src="/galleryPhotos/Will Rogers & Zachary Wagner.JPG" alt="">
+                    <img src="/galleryPhotos/Will Rogers & Zachary Wagner.JPG" alt="Will Rogers & Zachary Wagner">
                 </picture>
                 <figcaption>
                     <fieldset>
@@ -454,227 +181,7 @@ const title = "Gallery";
                         <dt>Description</dt>
                         <dd>Will Rogers & Zachary Wagner</dd>
                         </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
-                        </svg>
-                        </a>
-                    </dl>
-                    </fieldset>
-                </figcaption>
-                </figure>
-            </li>
-            <li class="photo-grid-item">
-                <figure>
-                
-                <picture>
-                    <img src="/galleryPhotos/Skyhawk at Dusk.jpg" alt="">
-                </picture>
-                <figcaption>
-                    <fieldset>
-                    <input id="Skyhawk at Dusk.jpg" type="checkbox">
-                    <label class="photo-close" for="Skyhawk at Dusk.jpg"></label>
-                    <label class="photo-link" for="Skyhawk at Dusk.jpg">
-                        <svg class="icon" viewBox="0 0 100 100">
-                        <circle cx="49" cy="49" r="36"></circle>
-                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
-                        </svg>
-                    </label>
-                    <dl>
-                        <label for="Skyhawk at Dusk.jpg">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <polyline points="14 32 50 68 86 32"></polyline>
-                        </svg>
-                        </label>
-                        <div>
-                        <dt>Date</dt>
-                        <dd>April 4, 2025</dd>
-                        </div>
-                        <div>
-                        <dt>Location</dt>
-                        <dd>Bentonville, AR</dd>
-                        </div>
-                        <div>
-                        <dt>Description</dt>
-                        <dd>Skyhawk at Dusk</dd>
-                        </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
-                        </svg>
-                        </a>
-                    </dl>
-                    </fieldset>
-                </figcaption>
-                </figure>
-            </li>
-            <li class="photo-grid-item">
-                <figure>
-                
-                <picture>
-                    <img src="/galleryPhotos/Zenith Rudder Clecoing.JPG" alt="">
-                </picture>
-                <figcaption>
-                    <fieldset>
-                    <input id="Zenith Rudder Clecoing.JPG" type="checkbox">
-                    <label class="photo-close" for="Zenith Rudder Clecoing.JPG"></label>
-                    <label class="photo-link" for="Zenith Rudder Clecoing.JPG">
-                        <svg class="icon" viewBox="0 0 100 100">
-                        <circle cx="49" cy="49" r="36"></circle>
-                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
-                        </svg>
-                    </label>
-                    <dl>
-                        <label for="Zenith Rudder Clecoing.JPG">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <polyline points="14 32 50 68 86 32"></polyline>
-                        </svg>
-                        </label>
-                        <div>
-                        <dt>Date</dt>
-                        <dd>May 15, 2025</dd>
-                        </div>
-                        <div>
-                        <dt>Location</dt>
-                        <dd>Mexico, MO</dd>
-                        </div>
-                        <div>
-                        <dt>Description</dt>
-                        <dd>Zenith Rudder Clecoing</dd>
-                        </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
-                        </svg>
-                        </a>
-                    </dl>
-                    </fieldset>
-                </figcaption>
-                </figure>
-            </li>
-            <li class="photo-grid-item">
-                <figure>
-                
-                <picture>
-                    <img src="/galleryPhotos/EAA Tools.jpg" alt="">
-                </picture>
-                <figcaption>
-                    <fieldset>
-                    <input id="EAA Tools.jpg" type="checkbox">
-                    <label class="photo-close" for="EAA Tools.jpg"></label>
-                    <label class="photo-link" for="EAA Tools.jpg">
-                        <svg class="icon" viewBox="0 0 100 100">
-                        <circle cx="49" cy="49" r="36"></circle>
-                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
-                        </svg>
-                    </label>
-                    <dl>
-                        <label for="EAA Tools.jpg">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <polyline points="14 32 50 68 86 32"></polyline>
-                        </svg>
-                        </label>
-                        <div>
-                        <dt>Date</dt>
-                        <dd>February 8, 2025</dd>
-                        </div>
-                        <div>
-                        <dt>Location</dt>
-                        <dd>Manassas, VA</dd>
-                        </div>
-                        <div>
-                        <dt>Description</dt>
-                        <dd>EAA Tools</dd>
-                        </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
-                        </svg>
-                        </a>
-                    </dl>
-                    </fieldset>
-                </figcaption>
-                </figure>
-            </li>
-            <li class="photo-grid-item">
-                <figure>
-                
-                <picture>
-                    <img src="/galleryPhotos/EAA Avionics Circuit Diagram.jpg" alt="">
-                </picture>
-                <figcaption>
-                    <fieldset>
-                    <input id="EAA Avionics Circuit Diagram.jpg" type="checkbox">
-                    <label class="photo-close" for="EAA Avionics Circuit Diagram.jpg"></label>
-                    <label class="photo-link" for="EAA Avionics Circuit Diagram.jpg">
-                        <svg class="icon" viewBox="0 0 100 100">
-                        <circle cx="49" cy="49" r="36"></circle>
-                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
-                        </svg>
-                    </label>
-                    <dl>
-                        <label for="EAA Avionics Circuit Diagram.jpg">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <polyline points="14 32 50 68 86 32"></polyline>
-                        </svg>
-                        </label>
-                        <div>
-                        <dt>Date</dt>
-                        <dd>February 8, 2025</dd>
-                        </div>
-                        <div>
-                        <dt>Location</dt>
-                        <dd>Manassas, VA</dd>
-                        </div>
-                        <div>
-                        <dt>Description</dt>
-                        <dd>EAA Avionics Circuit Diagram</dd>
-                        </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
-                        </svg>
-                        </a>
-                    </dl>
-                    </fieldset>
-                </figcaption>
-                </figure>
-            </li>
-            <li class="photo-grid-item">
-                <figure>
-                
-                <picture>
-                    <img src="/galleryPhotos/Nighttime Flight.jpeg" alt="">
-                </picture>
-                <figcaption>
-                    <fieldset>
-                    <input id="Nighttime Flight.jpeg" type="checkbox">
-                    <label class="photo-close" for="Nighttime Flight.jpeg"></label>
-                    <label class="photo-link" for="Nighttime Flight.jpeg">
-                        <svg class="icon" viewBox="0 0 100 100">
-                        <circle cx="49" cy="49" r="36"></circle>
-                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
-                        </svg>
-                    </label>
-                    <dl>
-                        <label for="Nighttime Flight.jpeg">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <polyline points="14 32 50 68 86 32"></polyline>
-                        </svg>
-                        </label>
-                        <div>
-                        <dt>Date</dt>
-                        <dd>March 13, 2025</dd>
-                        </div>
-                        <div>
-                        <dt>Location</dt>
-                        <dd>Bentonville, AR</dd>
-                        </div>
-                        <div>
-                        <dt>Description</dt>
-                        <dd>Nighttime Flight</dd>
-                        </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Will Rogers & Zachary Wagner.JPG" tabindex="-1">
                         <svg class="icon" viewBox="0 0 100 100">
                             <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
                         </svg>
@@ -711,7 +218,7 @@ const title = "Gallery";
                         </label>
                         <div>
                         <dt>Date</dt>
-                        <dd>June 14, 2025</dd>
+                        <dd>June 15, 2025</dd>
                         </div>
                         <div>
                         <dt>Location</dt>
@@ -721,7 +228,7 @@ const title = "Gallery";
                         <dt>Description</dt>
                         <dd>Zenith Rudder Riveting</dd>
                         </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Zenith Rudder Riveting.mp4" tabindex="-1">
                         <svg class="icon" viewBox="0 0 100 100">
                             <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
                         </svg>
@@ -735,37 +242,37 @@ const title = "Gallery";
                 <figure>
                 
                 <picture>
-                    <img src="/galleryPhotos/Sunset in the Ozarks.jpeg" alt="">
+                    <img src="/galleryPhotos/Zenith CH 750.jpg" alt="Zenith CH 750">
                 </picture>
                 <figcaption>
                     <fieldset>
-                    <input id="Sunset in the Ozarks.jpeg" type="checkbox">
-                    <label class="photo-close" for="Sunset in the Ozarks.jpeg"></label>
-                    <label class="photo-link" for="Sunset in the Ozarks.jpeg">
+                    <input id="Zenith CH 750.jpg" type="checkbox">
+                    <label class="photo-close" for="Zenith CH 750.jpg"></label>
+                    <label class="photo-link" for="Zenith CH 750.jpg">
                         <svg class="icon" viewBox="0 0 100 100">
                         <circle cx="49" cy="49" r="36"></circle>
                         <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
                         </svg>
                     </label>
                     <dl>
-                        <label for="Sunset in the Ozarks.jpeg">
+                        <label for="Zenith CH 750.jpg">
                         <svg class="icon" viewBox="0 0 100 100">
                             <polyline points="14 32 50 68 86 32"></polyline>
                         </svg>
                         </label>
                         <div>
                         <dt>Date</dt>
-                        <dd>August 17, 2024</dd>
+                        <dd>June 15, 2025</dd>
                         </div>
                         <div>
                         <dt>Location</dt>
-                        <dd>Bentonville, AR</dd>
+                        <dd>Princeton, NJ</dd>
                         </div>
                         <div>
                         <dt>Description</dt>
-                        <dd>Sunset in the Ozarks</dd>
+                        <dd>Zenith CH 750</dd>
                         </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Zenith CH 750.jpg" tabindex="-1">
                         <svg class="icon" viewBox="0 0 100 100">
                             <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
                         </svg>
@@ -779,37 +286,37 @@ const title = "Gallery";
                 <figure>
                 
                 <picture>
-                    <img src="/galleryPhotos/Airplane Tail at Sunset.jpeg" alt="">
+                    <img src="/galleryPhotos/Will on a Cross Country Flight.png" alt="Will on a Cross Country Flight">
                 </picture>
                 <figcaption>
                     <fieldset>
-                    <input id="Airplane Tail at Sunset.jpeg" type="checkbox">
-                    <label class="photo-close" for="Airplane Tail at Sunset.jpeg"></label>
-                    <label class="photo-link" for="Airplane Tail at Sunset.jpeg">
+                    <input id="Will on a Cross Country Flight.png" type="checkbox">
+                    <label class="photo-close" for="Will on a Cross Country Flight.png"></label>
+                    <label class="photo-link" for="Will on a Cross Country Flight.png">
                         <svg class="icon" viewBox="0 0 100 100">
                         <circle cx="49" cy="49" r="36"></circle>
                         <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
                         </svg>
                     </label>
                     <dl>
-                        <label for="Airplane Tail at Sunset.jpeg">
+                        <label for="Will on a Cross Country Flight.png">
                         <svg class="icon" viewBox="0 0 100 100">
                             <polyline points="14 32 50 68 86 32"></polyline>
                         </svg>
                         </label>
                         <div>
                         <dt>Date</dt>
-                        <dd>August 17, 2024</dd>
+                        <dd>June 15, 2025</dd>
                         </div>
                         <div>
                         <dt>Location</dt>
-                        <dd>Bentonville, AR</dd>
+                        <dd>Princeton, NJ</dd>
                         </div>
                         <div>
                         <dt>Description</dt>
-                        <dd>Airplane Tail at Sunset</dd>
+                        <dd>Will on a Cross Country Flight</dd>
                         </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Will on a Cross Country Flight.png" tabindex="-1">
                         <svg class="icon" viewBox="0 0 100 100">
                             <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
                         </svg>
@@ -823,7 +330,7 @@ const title = "Gallery";
                 <figure>
                 
                 <picture>
-                    <img src="/galleryPhotos/Airplane Window Overlooking the Atlantic Ocean.JPG" alt="">
+                    <img src="/galleryPhotos/Airplane Window Overlooking the Atlantic Ocean.JPG" alt="Airplane Window Overlooking the Atlantic Ocean">
                 </picture>
                 <figcaption>
                     <fieldset>
@@ -853,7 +360,359 @@ const title = "Gallery";
                         <dt>Description</dt>
                         <dd>Airplane Window Overlooking the Atlantic Ocean</dd>
                         </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Airplane Window Overlooking the Atlantic Ocean.JPG" tabindex="-1">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
+                        </svg>
+                        </a>
+                    </dl>
+                    </fieldset>
+                </figcaption>
+                </figure>
+            </li>
+            <li class="photo-grid-item">
+                <figure>
+                
+                <picture>
+                    <img src="/galleryPhotos/Sunset in the Ozarks.jpeg" alt="Sunset in the Ozarks">
+                </picture>
+                <figcaption>
+                    <fieldset>
+                    <input id="Sunset in the Ozarks.jpeg" type="checkbox">
+                    <label class="photo-close" for="Sunset in the Ozarks.jpeg"></label>
+                    <label class="photo-link" for="Sunset in the Ozarks.jpeg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                        <circle cx="49" cy="49" r="36"></circle>
+                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
+                        </svg>
+                    </label>
+                    <dl>
+                        <label for="Sunset in the Ozarks.jpeg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <polyline points="14 32 50 68 86 32"></polyline>
+                        </svg>
+                        </label>
+                        <div>
+                        <dt>Date</dt>
+                        <dd>August 17, 2024</dd>
+                        </div>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Bentonville, AR</dd>
+                        </div>
+                        <div>
+                        <dt>Description</dt>
+                        <dd>Sunset in the Ozarks</dd>
+                        </div>
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Sunset in the Ozarks.jpeg" tabindex="-1">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
+                        </svg>
+                        </a>
+                    </dl>
+                    </fieldset>
+                </figcaption>
+                </figure>
+            </li>
+            <li class="photo-grid-item">
+                <figure>
+                
+                <picture>
+                    <img src="/galleryPhotos/Skyhawk at Dusk.jpg" alt="Skyhawk at Dusk">
+                </picture>
+                <figcaption>
+                    <fieldset>
+                    <input id="Skyhawk at Dusk.jpg" type="checkbox">
+                    <label class="photo-close" for="Skyhawk at Dusk.jpg"></label>
+                    <label class="photo-link" for="Skyhawk at Dusk.jpg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                        <circle cx="49" cy="49" r="36"></circle>
+                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
+                        </svg>
+                    </label>
+                    <dl>
+                        <label for="Skyhawk at Dusk.jpg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <polyline points="14 32 50 68 86 32"></polyline>
+                        </svg>
+                        </label>
+                        <div>
+                        <dt>Date</dt>
+                        <dd>April 4, 2025</dd>
+                        </div>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Bentonville, AR</dd>
+                        </div>
+                        <div>
+                        <dt>Description</dt>
+                        <dd>Skyhawk at Dusk</dd>
+                        </div>
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Skyhawk at Dusk.jpg" tabindex="-1">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
+                        </svg>
+                        </a>
+                    </dl>
+                    </fieldset>
+                </figcaption>
+                </figure>
+            </li>
+            <li class="photo-grid-item">
+                <figure>
+                
+                <picture>
+                    <img src="/galleryPhotos/Atlantic Ocean.JPG" alt="Atlantic Ocean">
+                </picture>
+                <figcaption>
+                    <fieldset>
+                    <input id="Atlantic Ocean.JPG" type="checkbox">
+                    <label class="photo-close" for="Atlantic Ocean.JPG"></label>
+                    <label class="photo-link" for="Atlantic Ocean.JPG">
+                        <svg class="icon" viewBox="0 0 100 100">
+                        <circle cx="49" cy="49" r="36"></circle>
+                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
+                        </svg>
+                    </label>
+                    <dl>
+                        <label for="Atlantic Ocean.JPG">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <polyline points="14 32 50 68 86 32"></polyline>
+                        </svg>
+                        </label>
+                        <div>
+                        <dt>Date</dt>
+                        <dd>November 9, 2024</dd>
+                        </div>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>New York City, NY</dd>
+                        </div>
+                        <div>
+                        <dt>Description</dt>
+                        <dd>Atlantic Ocean</dd>
+                        </div>
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Atlantic Ocean.JPG" tabindex="-1">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
+                        </svg>
+                        </a>
+                    </dl>
+                    </fieldset>
+                </figcaption>
+                </figure>
+            </li>
+            <li class="photo-grid-item">
+                <figure>
+                
+                <picture>
+                    <img src="/galleryPhotos/Nighttime Flight.jpeg" alt="Nighttime Flight">
+                </picture>
+                <figcaption>
+                    <fieldset>
+                    <input id="Nighttime Flight.jpeg" type="checkbox">
+                    <label class="photo-close" for="Nighttime Flight.jpeg"></label>
+                    <label class="photo-link" for="Nighttime Flight.jpeg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                        <circle cx="49" cy="49" r="36"></circle>
+                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
+                        </svg>
+                    </label>
+                    <dl>
+                        <label for="Nighttime Flight.jpeg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <polyline points="14 32 50 68 86 32"></polyline>
+                        </svg>
+                        </label>
+                        <div>
+                        <dt>Date</dt>
+                        <dd>March 13, 2025</dd>
+                        </div>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Bentonville, AR</dd>
+                        </div>
+                        <div>
+                        <dt>Description</dt>
+                        <dd>Nighttime Flight</dd>
+                        </div>
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Nighttime Flight.jpeg" tabindex="-1">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
+                        </svg>
+                        </a>
+                    </dl>
+                    </fieldset>
+                </figcaption>
+                </figure>
+            </li>
+            <li class="photo-grid-item">
+                <figure>
+                
+                <picture>
+                    <img src="/galleryPhotos/EAA Tools.jpg" alt="EAA Tools">
+                </picture>
+                <figcaption>
+                    <fieldset>
+                    <input id="EAA Tools.jpg" type="checkbox">
+                    <label class="photo-close" for="EAA Tools.jpg"></label>
+                    <label class="photo-link" for="EAA Tools.jpg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                        <circle cx="49" cy="49" r="36"></circle>
+                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
+                        </svg>
+                    </label>
+                    <dl>
+                        <label for="EAA Tools.jpg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <polyline points="14 32 50 68 86 32"></polyline>
+                        </svg>
+                        </label>
+                        <div>
+                        <dt>Date</dt>
+                        <dd>February 8, 2025</dd>
+                        </div>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Manassas, VA</dd>
+                        </div>
+                        <div>
+                        <dt>Description</dt>
+                        <dd>EAA Tools</dd>
+                        </div>
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/EAA Tools.jpg" tabindex="-1">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
+                        </svg>
+                        </a>
+                    </dl>
+                    </fieldset>
+                </figcaption>
+                </figure>
+            </li>
+            <li class="photo-grid-item">
+                <figure>
+                
+                <picture>
+                    <img src="/galleryPhotos/Zenith Rudder Clecoing.JPG" alt="Zenith Rudder Clecoing">
+                </picture>
+                <figcaption>
+                    <fieldset>
+                    <input id="Zenith Rudder Clecoing.JPG" type="checkbox">
+                    <label class="photo-close" for="Zenith Rudder Clecoing.JPG"></label>
+                    <label class="photo-link" for="Zenith Rudder Clecoing.JPG">
+                        <svg class="icon" viewBox="0 0 100 100">
+                        <circle cx="49" cy="49" r="36"></circle>
+                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
+                        </svg>
+                    </label>
+                    <dl>
+                        <label for="Zenith Rudder Clecoing.JPG">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <polyline points="14 32 50 68 86 32"></polyline>
+                        </svg>
+                        </label>
+                        <div>
+                        <dt>Date</dt>
+                        <dd>May 15, 2025</dd>
+                        </div>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Mexico, MO</dd>
+                        </div>
+                        <div>
+                        <dt>Description</dt>
+                        <dd>Zenith Rudder Clecoing</dd>
+                        </div>
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Zenith Rudder Clecoing.JPG" tabindex="-1">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
+                        </svg>
+                        </a>
+                    </dl>
+                    </fieldset>
+                </figcaption>
+                </figure>
+            </li>
+            <li class="photo-grid-item">
+                <figure>
+                
+                <picture>
+                    <img src="/galleryPhotos/Nick Akey Flying.JPG" alt="Nick Akey Flying">
+                </picture>
+                <figcaption>
+                    <fieldset>
+                    <input id="Nick Akey Flying.JPG" type="checkbox">
+                    <label class="photo-close" for="Nick Akey Flying.JPG"></label>
+                    <label class="photo-link" for="Nick Akey Flying.JPG">
+                        <svg class="icon" viewBox="0 0 100 100">
+                        <circle cx="49" cy="49" r="36"></circle>
+                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
+                        </svg>
+                    </label>
+                    <dl>
+                        <label for="Nick Akey Flying.JPG">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <polyline points="14 32 50 68 86 32"></polyline>
+                        </svg>
+                        </label>
+                        <div>
+                        <dt>Date</dt>
+                        <dd>January 1, 2018</dd>
+                        </div>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Princeton, NJ</dd>
+                        </div>
+                        <div>
+                        <dt>Description</dt>
+                        <dd>Nick Akey Flying</dd>
+                        </div>
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Nick Akey Flying.JPG" tabindex="-1">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
+                        </svg>
+                        </a>
+                    </dl>
+                    </fieldset>
+                </figcaption>
+                </figure>
+            </li>
+            <li class="photo-grid-item">
+                <figure>
+                
+                <picture>
+                    <img src="/galleryPhotos/Will Rogers & Kate Chrisco on a Cross-Country Flight.jpeg" alt="Will Rogers & Kate Chrisco on a Cross-Country Flight">
+                </picture>
+                <figcaption>
+                    <fieldset>
+                    <input id="Will Rogers & Kate Chrisco on a Cross-Country Flight.jpeg" type="checkbox">
+                    <label class="photo-close" for="Will Rogers & Kate Chrisco on a Cross-Country Flight.jpeg"></label>
+                    <label class="photo-link" for="Will Rogers & Kate Chrisco on a Cross-Country Flight.jpeg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                        <circle cx="49" cy="49" r="36"></circle>
+                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
+                        </svg>
+                    </label>
+                    <dl>
+                        <label for="Will Rogers & Kate Chrisco on a Cross-Country Flight.jpeg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <polyline points="14 32 50 68 86 32"></polyline>
+                        </svg>
+                        </label>
+                        <div>
+                        <dt>Date</dt>
+                        <dd>January 9, 2025</dd>
+                        </div>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Bentonville, AR</dd>
+                        </div>
+                        <div>
+                        <dt>Description</dt>
+                        <dd>Will Rogers & Kate Chrisco on a Cross-Country Flight</dd>
+                        </div>
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Will Rogers & Kate Chrisco on a Cross-Country Flight.jpeg" tabindex="-1">
                         <svg class="icon" viewBox="0 0 100 100">
                             <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
                         </svg>
@@ -890,7 +749,7 @@ const title = "Gallery";
                         </label>
                         <div>
                         <dt>Date</dt>
-                        <dd>June 14, 2025</dd>
+                        <dd>June 15, 2025</dd>
                         </div>
                         <div>
                         <dt>Location</dt>
@@ -900,7 +759,7 @@ const title = "Gallery";
                         <dt>Description</dt>
                         <dd>Taking Off From Grass</dd>
                         </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Taking Off From Grass.mov" tabindex="-1">
                         <svg class="icon" viewBox="0 0 100 100">
                             <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
                         </svg>
@@ -914,71 +773,27 @@ const title = "Gallery";
                 <figure>
                 
                 <picture>
-                    <img src="/galleryPhotos/Atlantic Ocean.JPG" alt="">
+                    <img src="/galleryPhotos/Airplane Wing Spar.jpg" alt="Airplane Wing Spar">
                 </picture>
                 <figcaption>
                     <fieldset>
-                    <input id="Atlantic Ocean.JPG" type="checkbox">
-                    <label class="photo-close" for="Atlantic Ocean.JPG"></label>
-                    <label class="photo-link" for="Atlantic Ocean.JPG">
+                    <input id="Airplane Wing Spar.jpg" type="checkbox">
+                    <label class="photo-close" for="Airplane Wing Spar.jpg"></label>
+                    <label class="photo-link" for="Airplane Wing Spar.jpg">
                         <svg class="icon" viewBox="0 0 100 100">
                         <circle cx="49" cy="49" r="36"></circle>
                         <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
                         </svg>
                     </label>
                     <dl>
-                        <label for="Atlantic Ocean.JPG">
+                        <label for="Airplane Wing Spar.jpg">
                         <svg class="icon" viewBox="0 0 100 100">
                             <polyline points="14 32 50 68 86 32"></polyline>
                         </svg>
                         </label>
                         <div>
                         <dt>Date</dt>
-                        <dd>November 9, 2024</dd>
-                        </div>
-                        <div>
-                        <dt>Location</dt>
-                        <dd>New York City, NY</dd>
-                        </div>
-                        <div>
-                        <dt>Description</dt>
-                        <dd>Atlantic Ocean</dd>
-                        </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
-                        </svg>
-                        </a>
-                    </dl>
-                    </fieldset>
-                </figcaption>
-                </figure>
-            </li>
-            <li class="photo-grid-item">
-                <figure>
-                
-                <picture>
-                    <img src="/galleryPhotos/Nick Akey & Kiele Trainor.JPG" alt="">
-                </picture>
-                <figcaption>
-                    <fieldset>
-                    <input id="Nick Akey & Kiele Trainor.JPG" type="checkbox">
-                    <label class="photo-close" for="Nick Akey & Kiele Trainor.JPG"></label>
-                    <label class="photo-link" for="Nick Akey & Kiele Trainor.JPG">
-                        <svg class="icon" viewBox="0 0 100 100">
-                        <circle cx="49" cy="49" r="36"></circle>
-                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
-                        </svg>
-                    </label>
-                    <dl>
-                        <label for="Nick Akey & Kiele Trainor.JPG">
-                        <svg class="icon" viewBox="0 0 100 100">
-                            <polyline points="14 32 50 68 86 32"></polyline>
-                        </svg>
-                        </label>
-                        <div>
-                        <dt>Date</dt>
-                        <dd>January 1, 2018</dd>
+                        <dd>June 15, 2025</dd>
                         </div>
                         <div>
                         <dt>Location</dt>
@@ -986,9 +801,9 @@ const title = "Gallery";
                         </div>
                         <div>
                         <dt>Description</dt>
-                        <dd>Nick Akey & Kiele Trainor</dd>
+                        <dd>Airplane Wing Spar</dd>
                         </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Airplane Wing Spar.jpg" tabindex="-1">
                         <svg class="icon" viewBox="0 0 100 100">
                             <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
                         </svg>
@@ -1002,37 +817,37 @@ const title = "Gallery";
                 <figure>
                 
                 <picture>
-                    <img src="/galleryPhotos/EAA Avionics Trianing Kit.jpg" alt="">
+                    <img src="/galleryPhotos/Airplane Tail at Sunset.jpeg" alt="Airplane Tail at Sunset">
                 </picture>
                 <figcaption>
                     <fieldset>
-                    <input id="EAA Avionics Trianing Kit.jpg" type="checkbox">
-                    <label class="photo-close" for="EAA Avionics Trianing Kit.jpg"></label>
-                    <label class="photo-link" for="EAA Avionics Trianing Kit.jpg">
+                    <input id="Airplane Tail at Sunset.jpeg" type="checkbox">
+                    <label class="photo-close" for="Airplane Tail at Sunset.jpeg"></label>
+                    <label class="photo-link" for="Airplane Tail at Sunset.jpeg">
                         <svg class="icon" viewBox="0 0 100 100">
                         <circle cx="49" cy="49" r="36"></circle>
                         <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
                         </svg>
                     </label>
                     <dl>
-                        <label for="EAA Avionics Trianing Kit.jpg">
+                        <label for="Airplane Tail at Sunset.jpeg">
                         <svg class="icon" viewBox="0 0 100 100">
                             <polyline points="14 32 50 68 86 32"></polyline>
                         </svg>
                         </label>
                         <div>
                         <dt>Date</dt>
-                        <dd>February 9, 2025</dd>
+                        <dd>August 17, 2024</dd>
                         </div>
                         <div>
                         <dt>Location</dt>
-                        <dd>Manassas, VA</dd>
+                        <dd>Bentonville, AR</dd>
                         </div>
                         <div>
                         <dt>Description</dt>
-                        <dd>EAA Avionics Trianing Kit</dd>
+                        <dd>Airplane Tail at Sunset</dd>
                         </div>
-                        <a class="photo-link" target="_blank" href="#" tabindex="-1">
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Airplane Tail at Sunset.jpeg" tabindex="-1">
                         <svg class="icon" viewBox="0 0 100 100">
                             <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
                         </svg>
@@ -1042,8 +857,140 @@ const title = "Gallery";
                 </figcaption>
                 </figure>
             </li>
-
+            <li class="photo-grid-item">
+                <figure>
+                
+                <picture>
+                    <img src="/galleryPhotos/Daytime Flight.jpeg" alt="Daytime Flight">
+                </picture>
+                <figcaption>
+                    <fieldset>
+                    <input id="Daytime Flight.jpeg" type="checkbox">
+                    <label class="photo-close" for="Daytime Flight.jpeg"></label>
+                    <label class="photo-link" for="Daytime Flight.jpeg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                        <circle cx="49" cy="49" r="36"></circle>
+                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
+                        </svg>
+                    </label>
+                    <dl>
+                        <label for="Daytime Flight.jpeg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <polyline points="14 32 50 68 86 32"></polyline>
+                        </svg>
+                        </label>
+                        <div>
+                        <dt>Date</dt>
+                        <dd>August 17, 2024</dd>
+                        </div>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Crystal Lake, AR</dd>
+                        </div>
+                        <div>
+                        <dt>Description</dt>
+                        <dd>Daytime Flight</dd>
+                        </div>
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Daytime Flight.jpeg" tabindex="-1">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
+                        </svg>
+                        </a>
+                    </dl>
+                    </fieldset>
+                </figcaption>
+                </figure>
+            </li>
+            <li class="photo-grid-item">
+                <figure>
+                
+                <picture>
+                    <img src="/galleryPhotos/Finished Zenith Rudder.JPG" alt="Finished Zenith Rudder">
+                </picture>
+                <figcaption>
+                    <fieldset>
+                    <input id="Finished Zenith Rudder.JPG" type="checkbox">
+                    <label class="photo-close" for="Finished Zenith Rudder.JPG"></label>
+                    <label class="photo-link" for="Finished Zenith Rudder.JPG">
+                        <svg class="icon" viewBox="0 0 100 100">
+                        <circle cx="49" cy="49" r="36"></circle>
+                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
+                        </svg>
+                    </label>
+                    <dl>
+                        <label for="Finished Zenith Rudder.JPG">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <polyline points="14 32 50 68 86 32"></polyline>
+                        </svg>
+                        </label>
+                        <div>
+                        <dt>Date</dt>
+                        <dd>May 16, 2025</dd>
+                        </div>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Mexico, MO</dd>
+                        </div>
+                        <div>
+                        <dt>Description</dt>
+                        <dd>Finished Zenith Rudder</dd>
+                        </div>
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/Finished Zenith Rudder.JPG" tabindex="-1">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
+                        </svg>
+                        </a>
+                    </dl>
+                    </fieldset>
+                </figcaption>
+                </figure>
+            </li>
+            <li class="photo-grid-item">
+                <figure>
+                
+                <picture>
+                    <img src="/galleryPhotos/EAA Avionics Circuit Diagram.jpg" alt="EAA Avionics Circuit Diagram">
+                </picture>
+                <figcaption>
+                    <fieldset>
+                    <input id="EAA Avionics Circuit Diagram.jpg" type="checkbox">
+                    <label class="photo-close" for="EAA Avionics Circuit Diagram.jpg"></label>
+                    <label class="photo-link" for="EAA Avionics Circuit Diagram.jpg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                        <circle cx="49" cy="49" r="36"></circle>
+                        <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
+                        </svg>
+                    </label>
+                    <dl>
+                        <label for="EAA Avionics Circuit Diagram.jpg">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <polyline points="14 32 50 68 86 32"></polyline>
+                        </svg>
+                        </label>
+                        <div>
+                        <dt>Date</dt>
+                        <dd>February 8, 2025</dd>
+                        </div>
+                        <div>
+                        <dt>Location</dt>
+                        <dd>Manassas, VA</dd>
+                        </div>
+                        <div>
+                        <dt>Description</dt>
+                        <dd>EAA Avionics Circuit Diagram</dd>
+                        </div>
+                        <a class="photo-link" target="_blank" href="/galleryPhotos/EAA Avionics Circuit Diagram.jpg" tabindex="-1">
+                        <svg class="icon" viewBox="0 0 100 100">
+                            <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
+                        </svg>
+                        </a>
+                    </dl>
+                    </fieldset>
+                </figcaption>
+                </figure>
+            </li>
         </ul>
     </section>
     </main>
 </Layout>
+

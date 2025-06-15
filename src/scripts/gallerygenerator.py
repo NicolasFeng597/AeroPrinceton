@@ -5,6 +5,7 @@ import os
 # import ffmpeg
 import subprocess
 import json
+import random
 # import geopy
 # from geopy.geocoders import Nominatim
 # from geopy.exc import GeocoderServiceError
@@ -50,15 +51,24 @@ infodict = {
 
 
 totalString = ""
+random.shuffle(dir_list)
 for i in range(len(dir_list)):
     # print(i)
     sourcename = str(dir_list[i]) # date + name
     if sourcename == '.DS_Store':
         continue
     # print(sourcename)
-    link = "#"
+    # link = "#"
+    link = f"/galleryPhotos/{sourcename}"
     location = "Princeton, NJ"
-    description = ""
+
+    # TEMP (just because I am lazy)
+    id = sourcename[:sourcename.rfind(".")] # ex: video.mp4->video
+    description = id
+    try:
+        location = infodict[sourcename][0]
+    except:
+        print(id)
     
 
     # Grab date from meta data
@@ -121,7 +131,7 @@ for i in range(len(dir_list)):
         img = Image.open(f"./public/galleryPhotos/{sourcename}")
         mediatag = f"""
                 <picture>
-                    <img src="/galleryPhotos/{sourcename}" alt="">
+                    <img src="/galleryPhotos/{sourcename}" alt="{description}">
                 </picture>"""
         try:
             
@@ -170,7 +180,6 @@ for i in range(len(dir_list)):
 
 
     # Alt Grab date from title
-    id = sourcename[:sourcename.rfind(".")] # ex: video.mp4->video
     # year, month, day  = map(int, id[:sourcename.rfind("-")].split("-")) # Example date in YYYYMMDD format
     timestamp = datetime.datetime(year, month, day)
     datetime_object = timestamp.strftime('%B %d, %Y')
@@ -178,15 +187,10 @@ for i in range(len(dir_list)):
     datetime_object = datetime_object[:datetime_object.find(" ")] +" "+ datetime_object.split()[1].lstrip("0") + datetime_object[datetime_object.rfind(" "):] 
     # print(datetime_object)
 
-    # TEMP (just because I am lazy)
-    description = id
-    try:
-        location = infodict[sourcename][0]
-    except:
-        print(id)
 
-    # html for downloaded video
-    dldv = f"""
+
+    # html for list item
+    huhflea = f"""
             <li class="photo-grid-item">
                 <figure>
                 {mediatag}
@@ -228,8 +232,34 @@ for i in range(len(dir_list)):
                 </figcaption>
                 </figure>
             </li>"""
-    totalString += dldv
+    totalString += huhflea
+
+base = """---
+import { Image } from 'astro:assets';
+import "../styles/global.css";
+import "../styles/bullet.css";
+import "../styles/gallery.css";
+import Layout from "../layouts/Layout.astro";
+const title = "Gallery";
+---
+
+<Layout pageTitle={title}>
+    <main ontouchstart="true">
+    <section class="photo-grid">
+        <ul class="grid-isotope">
+""" + totalString + """
+        </ul>
+    </section>
+    </main>
+</Layout>
+
+"""
+
 
 # print(totalString)
-file = open("output.txt", "w")
-file.write(totalString) 
+file_path = os.path.join(os.getcwd(), 'src', 'pages', 'gallery.astro')
+print("Current working directory:", os.getcwd())
+# os.truncate(file_path, 0)
+# file = open("gallery.astro", "w")
+with open(file_path, 'w') as file:
+    file.write(base)
