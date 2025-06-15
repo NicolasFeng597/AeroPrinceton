@@ -1,0 +1,32 @@
+---
+import "../styles/global.css";
+import "../styles/bullet.css";
+import "../styles/gallery.css";
+import Layout from "../layouts/Layout.astro";
+const title = "Gallery";
+---
+
+<!-- todo: fix "student-powered flight" centering on mobile -->
+<!-- todo: fix pic weird outline -->
+  
+<Layout pageTitle={title}>
+    <br>
+    <br>
+    <br>
+    <div class="center">
+        <!-- <h1 class="main-para">
+            Gallery
+        </h1> -->
+        <h2> {title}</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div style="margin-top: 100px;">
+        <!-- Elfsight Social Feed | Untitled Social Feed -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-3cdf786b-275a-4763-b9b8-f9c6e3c2f7e1" data-elfsight-app-lazy></div>
+    </div>
+
+</Layout>
+

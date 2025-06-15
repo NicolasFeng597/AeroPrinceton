@@ -1,0 +1,25 @@
+.main-para {
+  font-weight: bold;
+  color: black;
+  width: 50%;
+
+
+  max-width: 100%;
+  /* padding-left: 
+  padding-right: 50%; */
+  /* padding: 20px 100px; */
+  z-index: 1;
+  font-size: 5vw;
+  
+  position: absolute;
+  display: flex; 
+  text-align: center;
+
+}
+.center {
+    text-align: center;
+    /* border: 3px solid green; */
+    font-weight: bold;
+    color: black;
+    font-size: 1000px;
+}
