@@ -4,7 +4,7 @@ import "../styles/topnav.css";
 ---
 
 <!-- <script src="../scripts/navbar.js"></script> -->
-<script is:inline client:load>
+<!-- <script is:inline client:load>
    // document.addEventListener("DOMContentLoaded", function () {
    // const hamburger = document.getElementById("hamburger");
    // const nav = document.getElementById("main_nav");
@@ -56,12 +56,25 @@ import "../styles/topnav.css";
    // Re-initialize after swapping pages
    document.addEventListener("astro:after-swap", init)
 });
+</script> -->
+<script is:inline client:load>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.pages');
+
+    if (hamburger && menu) {
+      hamburger.addEventListener('click', () => {
+        menu.classList.toggle('mobile');
+      });
+    }
+  });
 </script>
+
 
 <nav class="nav-container">
   <div class="logo">
     <a href="/" class="home-logo">
-      <img src="/transparentlogo.svg" alt="Aero Princeton Logo">
+      <img src="/transparentlogo.png" alt="Aero Princeton Logo">
     </a>
     <a class="aero" href="/">Aero</a>
     <a class="princeton" href="/">Princeton</a>

@@ -263,6 +263,10 @@ section {
   width:100%;;
 
 }
+.donorName {
+  color: white;
+  text-align: center;
+}
 
 .brands {
   /* display: grid; */
