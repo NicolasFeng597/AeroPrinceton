@@ -24,34 +24,36 @@ dir_list = os.listdir(path)
 # Name: [location, time, description
 
 infodict = {
-    # 'Zenith CH 750.jpg':                                        ['Bentonville, AR','',''],
-    'Statue of Liberty.MOV':                                    ['New York City, NY','',''],
-    'Daytime Flight.jpeg':                                      ['Crystal Lake, AR','',''],
-    'Finished Zenith Rudder.JPG':                               ['Mexico, MO','',''],
-    # 'Nick Akey Flying.JPG':                                     ['Bentonville, AR','',''],
-    # 'Airplane Wing Spar.jpg':                                   ['Bentonville, AR','',''],
-    'Will Rogers & Kate Chrisco on a Cross-Country Flight.jpeg':['Bentonville, AR','',''],
-    'Will Rogers & Zachary Wagner.JPG':                         ['Mexico, MO','',''],
-    'Skyhawk at Dusk.jpg':                                      ['Bentonville, AR','',''],
-    'Zenith Rudder Clecoing.JPG':                               ['Mexico, MO','',''],
-    'EAA Tools.jpg':                                            ['Manassas, VA','',''],
-    'EAA Avionics Circuit Diagram.jpg':                         ['Manassas, VA','',''],
-    'Nighttime Flight.jpeg':                                    ['Bentonville, AR','',''],
-    'Zenith Rudder Riveting.mp4':                               ['Mexico, MO','',''],
-    'Sunset in the Ozarks.jpeg':                                ['Bentonville, AR','',''],
-    'Airplane Tail at Sunset.jpeg':                             ['Bentonville, AR','',''],
-    # 'Airplane Window Overlooking the Atlantic Ocean.JPG':       ['Bentonville, AR','',''],
-    'Taking Off From Grass.mov':                                ['Trigger Gap, AR','',''],
-    'Atlantic Ocean.JPG':                                       ['New York City, NY','',''],
-    # 'Nick Akey & Kiele Trainor.JPG':                            ['Bentonville, AR','',''],
-    'EAA Avionics Trianing Kit.jpg':                            ['Manassas, VA','',''],
-    'Will on a Cross country Flight.png':                        ['Bentonville, VA','',''],
+    # 'Zenith CH 750.jpg':                                        ['Bentonville, AR','','',''],
+    'Statue of Liberty.MOV':                                    ['New York City, NY','','',''],
+    'Daytime Flight.jpeg':                                      ['Crystal Lake, AR','','',''],
+    'Finished Zenith Rudder.JPG':                               ['Mexico, MO','','',''],
+    # 'Nick Akey Flying.JPG':                                     ['Bentonville, AR','','',''],
+    # 'Airplane Wing Spar.jpg':                                   ['Bentonville, AR','','',''],
+    'Will Rogers & Kate Chrisco on a Cross-Country Flight.jpeg':['Bentonville, AR','','',''],
+    'Will Rogers & Zachary Wagner.JPG':                         ['Mexico, MO','','',''],
+    'Skyhawk at Dusk.jpg':                                      ['Bentonville, AR','','',''],
+    'Zenith Rudder Clecoing.JPG':                               ['Mexico, MO','','',''],
+    'EAA Tools.jpg':                                            ['Manassas, VA','','',''],
+    'EAA Avionics Circuit Diagram.jpg':                         ['Manassas, VA','','',''],
+    'Nighttime Flight.jpeg':                                    ['Bentonville, AR','','',"rotate: -30deg; scale: 1.7; object-position:center -70%;"],
+    'Zenith Rudder Riveting.mp4':                               ['Mexico, MO','','','object-position:center 80%;'],
+    'Sunset in the Ozarks.jpeg':                                ['Bentonville, AR','','',''],
+    'Airplane Tail at Sunset.jpeg':                             ['Bentonville, AR','','',''],
+    # 'Airplane Window Overlooking the Atlantic Ocean.JPG':       ['Bentonville, AR','','',''],
+    'Taking Off From Grass.mov':                                ['Trigger Gap, AR','','',''],
+    'Atlantic Ocean.JPG':                                       ['New York City, NY','','',''],
+    # 'Nick Akey & Kiele Trainor.JPG':                            ['Bentonville, AR','','',''],
+    'EAA Avionics Trianing Kit.jpg':                            ['Manassas, VA','','',''],
+    'Will on a Cross country Flight.png':                        ['Bentonville, VA','','',''],
 }
 
 
 
 totalString = ""
+dir_list.remove("Finished Zenith Rudder.JPG")
 random.shuffle(dir_list)
+dir_list.insert(0, "Finished Zenith Rudder.JPG")
 for i in range(len(dir_list)):
     # print(i)
     sourcename = str(dir_list[i]) # date + name
@@ -70,12 +72,17 @@ for i in range(len(dir_list)):
     except:
         print(id)
     
+    # Get the special sauce (special styling)
+    try:
+        specialSauce = infodict[sourcename][3]
+    except:
+        specialSauce = ""
 
     # Grab date from meta data
     visual = str(sourcename[sourcename.rfind(".")+1:])
     if visual.lower() == "mov" or visual.lower() == "mp4":
         mediatag = f"""
-                <video playsinline autoplay muted loop id="background-video">
+                <video playsinline autoplay muted loop id="background-video" style="{specialSauce}">
                     <source src="/galleryPhotos/{sourcename}" type="video/mp4">
                     <source src="/galleryPhotos/{sourcename}" type="video/quicktime">
                     Your browser does not support the video tag.
@@ -131,7 +138,7 @@ for i in range(len(dir_list)):
         img = Image.open(f"./public/galleryPhotos/{sourcename}")
         mediatag = f"""
                 <picture>
-                    <img src="/galleryPhotos/{sourcename}" alt="{description}">
+                    <img style="{specialSauce}" src="/galleryPhotos/{sourcename}" alt="{description}">
                 </picture>"""
         try:
             
